@@ -1,0 +1,26 @@
+{
+  "seo": {
+    "title": "Tours en Cusco y Machu Picchu | Happy Trip Cusco",
+    "description": "Descubre los mejores tours en Cusco y Machu Picchu. Organiza tu viaje con nuestra agencia local y vive una experiencia inolvidable. ¡Reserva hoy!",
+    "keywords": "tours en cusco, viaje a machu picchu, agencia de viajes cusco, paquetes turisticos cusco, turismo en peru"
+  },
+  "language-title": "Selecciona tu idioma",
+  "language": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "hero": {
+    "badge": "TUS EXPERTOS LOCALES EN CUSCO",
+    "title": "Descubre el Perú",
+    "subtitle": "desde una perspectiva única",
+    "description": "Te llevamos a descubrir tesoros ocultos y experiencias auténticas, diseñadas a medida por los verdaderos expertos de Cusco.",
+    "start-adventure-label": "Empezar aventura"
+  },
+  "services": {
+    "label": "Tu",
+    "getaway": "escapada",
+    "itinerary": "itinerario",
+    "excursion": "excursión",
+    "destination": "destino"
+  }
+}
