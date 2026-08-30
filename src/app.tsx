@@ -6,6 +6,8 @@ import { Hero } from './components/hero'
 import { TravelTicket } from './components/travel-ticket'
 import { Reviews } from './components/reviews'
 import { WhyChooseUs } from './components/why-choose-us'
+import { TicketSupport } from './components/ticket-support'
+import { Faqs } from './components/faqs'
 
 export function App() {
   const { t, i18n } = useTranslation()
@@ -31,6 +33,12 @@ export function App() {
       </Section>
       <Section>
         <Reviews />
+      </Section>
+      <Section>
+        <TicketSupport />
+      </Section>
+      <Section>
+        <Faqs />
       </Section>
     </Fragment>
   )

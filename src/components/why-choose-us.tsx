@@ -42,7 +42,7 @@ export function WhyChooseUs() {
                 key={step}
                 className='max-lg:w-slide-feature-lg max-md:w-slide-feature-md max-lg:shrink-0 max-lg:snap-start max-lg:scroll-mx-6'
               >
-                <div className='timeline-view animate-zoom-in animate-range-[entry_5%_contain_20%]'>
+                <div className='timeline-view animate-blink animate-range-[entry_5%_contain_20%]'>
                   <div className='flex flex-col items-center gap-6'>
                     <div className='relative'>
                       <img

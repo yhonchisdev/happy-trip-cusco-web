@@ -11,7 +11,7 @@
   },
   "hero": {
     "badge": "YOUR LOCAL EXPERTS IN CUSCO",
-    "title": "Discover Peru",
+    "title": "Discover Cusco",
     "subtitle": "from a unique perspective",
     "description": "We take you to discover hidden treasures and authentic experiences, custom-designed by the true experts of Cusco.",
     "start-adventure-label": "Start your adventure"
@@ -94,6 +94,42 @@
     "enjoy-stress-free": {
       "title": "Enjoy stress free",
       "description": "Focus entirely on enjoying the journey while our team handles all logistics and 24/7 assistance."
+    }
+  },
+  "ticket-support": {
+    "title": "We design the trip",
+    "subtitle": "of your dreams, tailored just for you",
+    "description": "Forget the stress of planning. We take care of every single detail so you only have to worry about collecting unforgettable moments.",
+    "button-label": "Get a quote for my trip",
+    "steps": {
+      "1": "Tell us what experience you are looking for",
+      "2": "Receive an exclusive proposal",
+      "3": "Travel with 24/7 support"
+    }
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "faq": {
+      "1": {
+        "question": "How do I receive my booking confirmation?",
+        "answer": "Once payment is complete, you will receive an automatic email with your voucher and detailed itinerary. We will also contact you via WhatsApp to coordinate the final details."
+      },
+      "2": {
+        "question": "What happens if I need to cancel or change my travel dates?",
+        "answer": "We understand that plans change. We offer free cancellation and flexible date changes up to 48 hours before the tour starts on most of our experiences."
+      },
+      "3": {
+        "question": "Are flights and accommodation included in the tours?",
+        "answer": "Our core tours focus on local experiences, guides, and transportation. However, when you request a custom quote, we can include selected flights and hotels based on your budget."
+      },
+      "4": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit and debit cards (Visa, Mastercard, American Express), bank transfers, and secure payments via PayPal."
+      },
+      "5": {
+        "question": "What kind of support do you offer during the trip?",
+        "answer": "You will have 24/7 emergency support. We will provide you with an exclusive contact number to resolve any unexpected issues immediately."
+      }
     }
   }
 }

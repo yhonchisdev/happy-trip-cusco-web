@@ -3,7 +3,7 @@ import { Icons } from '@/icons/icon'
 import { cn } from '@/utils'
 
 interface Props {
-  variant?: 'outline' | 'secondary'
+  variant?: 'outline' | 'secondary' | 'third'
   widthFit?: boolean
   icon?: keyof typeof Icons
   onClick?: () => void
@@ -22,11 +22,12 @@ export function Button({
     <button
       onClick={onClick}
       className={cn(
-        'bg-malachite border-simple-green flex cursor-pointer items-center gap-1 rounded-full border-[1.5px] px-[22.5px] py-3 transition-opacity duration-100 hover:opacity-80 active:opacity-70',
+        'bg-malachite border-simple-green flex w-full cursor-pointer items-center justify-center gap-1 rounded-full border-[1.5px] px-[22.5px] py-3 transition-opacity duration-100 hover:opacity-80 active:opacity-70',
         {
           'border-english-holly bg-white': variant === 'outline',
           'bg-english-holly border-english-holly border-none px-6 py-[13.5px] text-white':
             variant === 'secondary',
+          'text-english-holly border-white bg-white': variant === 'third',
           'w-fit': widthFit,
         },
       )}

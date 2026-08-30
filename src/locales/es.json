@@ -11,7 +11,7 @@
   },
   "hero": {
     "badge": "TUS EXPERTOS LOCALES EN CUSCO",
-    "title": "Descubre el Perú",
+    "title": "Descubre el Cuzco",
     "subtitle": "desde una perspectiva única",
     "description": "Te llevamos a descubrir tesoros ocultos y experiencias auténticas, diseñadas a medida por los verdaderos expertos de Cusco.",
     "start-adventure-label": "Empezar aventura"
@@ -94,6 +94,42 @@
     "enjoy-stress-free": {
       "title": "Disfruta sin estrés",
       "description": "Dedícate por completo a disfrutar del viaje mientras nuestro equipo se encarga de toda la logística y la asistencia 24/7."
+    }
+  },
+  "ticket-support": {
+    "title": "Diseñamos el viaje ",
+    "subtitle": "de tus sueños a tu medida",
+    "description": "Olvídate del estrés de planificar. Nos encargamos de cada detalle para que solo te preocupes por coleccionar momentos inolvidables.",
+    "button-label": "Cotizar mi viaje",
+    "steps": {
+      "1": "Cuéntanos qué experiencia buscas",
+      "2": "Recibe una propuesta exclusiva",
+      "3": "Viaja con asistencia 24/7"
+    }
+  },
+  "faqs": {
+    "title": "Preguntas Frecuentes",
+    "faq": {
+      "1": {
+        "question": "¿Cómo recibo la confirmación de mi reserva?",
+        "answer": "Una vez realizado el pago, recibirás un correo electrónico automático con tu comprobante y el itinerario detallado. También nos pondremos en contacto contigo por WhatsApp para coordinar los últimos detalles."
+      },
+      "2": {
+        "question": "¿Qué pasa si necesito cancelar o cambiar las fechas de mi viaje?",
+        "answer": "Entendemos que los planes cambian. Ofrecemos cancelación gratuita y cambios de fecha flexibles hasta 48 horas antes del inicio del tour en la mayoría de nuestras experiencias."
+      },
+      "3": {
+        "question": "¿Los tours incluyen vuelos y alojamiento?",
+        "answer": "Nuestros tours principales se enfocan en las experiencias, guías y traslados locales. Sin embargo, al solicitar tu cotización a medida, podemos integrar vuelos y hoteles seleccionados según tu presupuesto."
+      },
+      "4": {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos todas las tarjetas de crédito y débito principales (Visa, Mastercard, American Express), transferencias bancarias y pagos seguros a través de PayPal."
+      },
+      "5": {
+        "question": "¿Qué tipo de asistencia ofrecen durante el viaje?",
+        "answer": "Cuentas con soporte de emergencia las 24 horas del día, los 7 días de la semana. Te daremos un número de contacto exclusivo para resolver cualquier imprevisto de inmediato."
+      }
     }
   }
 }

@@ -2,10 +2,11 @@ import { useTranslation } from 'react-i18next'
 import { Icons } from '@/icons/icon'
 import { cn } from '@/utils'
 
+const reviews = [1, 2, 3, 4, 5, 6] as const
+const scores = Array.from({ length: 5 }, (_, index) => index + 1)
+
 export function Reviews() {
   const { t } = useTranslation()
-  const reviews = [1, 2, 3, 4, 5, 6] as const
-  const scores = Array.from({ length: 5 }, (_, index) => index + 1)
 
   return (
     <div className='flex flex-col gap-12 py-10'>
@@ -44,6 +45,7 @@ export function Reviews() {
                     {scores.map((score) => {
                       return (
                         <Icons.Star
+                          key={score}
                           className={cn('text-sea-glass size-5', {
                             'text-australia-green':
                               score <= t(`review.${review}.rating`),

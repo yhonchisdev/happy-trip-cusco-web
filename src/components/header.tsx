@@ -1,10 +1,11 @@
+import type { PropsWithChildren } from 'react'
 import { createPortal } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 import { Icons } from '@/icons/icon'
+import { cn } from '@/utils'
 import { useDisclosure } from '@/hooks/use-disclosure'
 import { Section } from './section'
 import { Button } from './button'
-import { LanguageButton } from './language-button'
 
 export function Header() {
   const { t, i18n } = useTranslation()
@@ -19,7 +20,12 @@ export function Header() {
     <Section>
       <header className='flex items-center justify-between gap-4 py-4'>
         <Icons.Wordmark className='h-12.5 w-auto' />
-        <Button variant='outline' icon='Language' onClick={disclosure.onOpen}>
+        <Button
+          variant='outline'
+          widthFit
+          icon='Language'
+          onClick={disclosure.onOpen}
+        >
           {i18n.language.toUpperCase()}
         </Button>
       </header>
@@ -60,5 +66,31 @@ export function Header() {
           document.body,
         )}
     </Section>
+  )
+}
+
+interface Props {
+  active?: boolean
+  onClick?: () => void
+}
+
+export function LanguageButton({
+  active,
+  onClick,
+  children,
+}: PropsWithChildren<Props>) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        'border-sea-glass hover:border-english-holly flex cursor-pointer items-center justify-between gap-4 rounded-xl border px-4 py-3 transition-colors duration-200',
+        {
+          'bg-english-holly border-english-holly text-white': active,
+        },
+      )}
+    >
+      <span className='text-sm leading-4.5'>{children}</span>
+      {active && <Icons.Check className='size-5' />}
+    </button>
   )
 }
