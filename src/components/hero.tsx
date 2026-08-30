@@ -5,19 +5,21 @@ export function Hero() {
   const { t } = useTranslation()
 
   return (
-    <div className='flex max-w-150 flex-col gap-4 max-lg:items-center max-lg:text-center'>
+    <div className='flex max-w-150 flex-col gap-6 max-lg:items-center max-lg:text-center'>
       <div className='animate-fade-in-left flex items-center gap-2'>
         <div className='bg-simple-green h-0.5 w-8' />
-        <span className='text-simple-green text-sm leading-4.5 font-bold'>
+        <span className='text-simple-green text-xs leading-4 font-bold tracking-[2.4px]'>
           {t('hero.badge')}
         </span>
       </div>
-      <h1 className='animate-fade-in-right text-5xl leading-14 font-black lg:text-[72px] lg:leading-20'>
-        {t('hero.title')}
-      </h1>
-      <span className='animate-fade-in-down font-georgia text-4xl leading-11 lg:text-5xl lg:leading-14'>
-        {t('hero.subtitle')}
-      </span>
+      <div className='flex flex-col gap-2'>
+        <h1 className='animate-fade-in-right text-5xl leading-14 font-black lg:text-[72px] lg:leading-20'>
+          {t('hero.title')}
+        </h1>
+        <span className='animate-fade-in-down font-georgia text-4xl leading-11 lg:text-5xl lg:leading-14'>
+          {t('hero.subtitle')}
+        </span>
+      </div>
       <span className='animate-fade-in-up text-lunar-green text-base leading-6 lg:text-lg lg:leading-7'>
         {t('hero.description')}
       </span>

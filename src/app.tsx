@@ -4,6 +4,8 @@ import { Header } from './components/header'
 import { Section } from './components/section'
 import { Hero } from './components/hero'
 import { TravelTicket } from './components/travel-ticket'
+import { Reviews } from './components/reviews'
+import { WhyChooseUs } from './components/why-choose-us'
 
 export function App() {
   const { t, i18n } = useTranslation()
@@ -23,6 +25,12 @@ export function App() {
           <Hero />
           <TravelTicket />
         </div>
+      </Section>
+      <Section>
+        <WhyChooseUs />
+      </Section>
+      <Section>
+        <Reviews />
       </Section>
     </Fragment>
   )

@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Icons } from '@/icons/icon'
 import { cn } from '@/utils'
-import getaway from '@/assets/images/getaway.jpg'
-import itinerary from '@/assets/images/itinerary.jpg'
-import excursion from '@/assets/images/excursion.jpg'
-import destination from '@/assets/images/destination.jpg'
+import getaway from '@/assets/images/travel-ticket/getaway.jpg'
+import itinerary from '@/assets/images/travel-ticket/itinerary.jpg'
+import excursion from '@/assets/images/travel-ticket/excursion.jpg'
+import destination from '@/assets/images/travel-ticket/destination.jpg'
 
 export function TravelTicket() {
   const { t } = useTranslation()

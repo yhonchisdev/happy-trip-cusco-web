@@ -4,6 +4,8 @@ import Check from './check.svg?react'
 import Close from './close.svg?react'
 import Ticket from './ticket.svg?react'
 import Star from './star.svg?react'
+import Coupon from './coupon.svg?react'
+import ArrowUp from './arrow-up.svg?react'
 
 export const Icons = {
   Wordmark,
@@ -12,4 +14,6 @@ export const Icons = {
   Close,
   Ticket,
   Star,
+  Coupon,
+  ArrowUp,
 }

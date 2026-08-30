@@ -22,5 +22,78 @@
     "itinerary": "itinerary",
     "excursion": "excursion",
     "destination": "destination"
+  },
+  "reviews": {
+    "badge": "EXPERT TRAVELER",
+    "title": "Stories that",
+    "subtitle": "inspire."
+  },
+  "review": {
+    "1": {
+      "rating": 5,
+      "user": {
+        "name": "Marian Godoy",
+        "location": "Spain"
+      },
+      "description": "It has been an incredible experience that far exceeded our expectations, amazing, something you don't expect for such an insignificant price, our guide Pika was super friendly, helped us with everything and explained everything. An unforgettable experience"
+    },
+    "2": {
+      "rating": 5,
+      "user": {
+        "name": "Lee Chiar",
+        "location": "Malaysia"
+      },
+      "description": "An experience with an excellent value for money, something I would recommend to everyone. A MUST-DO when you are in Marrakech. Medo, our guide, was very friendly and attentive. He keeps communicating with us, even though at the beginning there were small setbacks regarding transportation, but we thought it was handled well."
+    },
+    "3": {
+      "rating": 5,
+      "user": {
+        "name": "Georgia",
+        "location": "United Kingdom"
+      },
+      "description": "A great day! At first, I was worried about having to rush to fit all the activities throughout the day, but it wasn't like that and everything went well. The food was also delicious."
+    },
+    "4": {
+      "rating": 4,
+      "user": {
+        "name": "Renee",
+        "location": "Canada"
+      },
+      "description": "This was a great package. Our guide, Abderrahim, was great! He was an expert, answered all my questions, and made sure we all had a great time... I loved the experience"
+    },
+    "5": {
+      "rating": 4,
+      "user": {
+        "name": "Kévin",
+        "location": "France"
+      },
+      "description": "A great 1-day excursion, all services were excellent, we had time for each activity with breaks and time to talk with our group. Pika, our guide, was wonderful with us, attentive and patient. A day very well spent, we recommend it!"
+    },
+    "6": {
+      "rating": 4,
+      "user": {
+        "name": "Evandro",
+        "location": "Portugal"
+      },
+      "description": "Pika was very attentive and caring, making us feel safe and at home. We really enjoyed our day and would definitely go back! I couldn't recommend her more. Thank you, Pika."
+    }
+  },
+  "why-choose-us": {
+    "tagline": "You've imagined your next destination – now it's time to live it",
+    "title": "Travel on your own terms with global support, expert guides, and unique experiences",
+    "discover-exclusive-routes": {
+      "badge": "Awesome!",
+      "title": "Discover exclusive routes",
+      "description": "Access authentic destinations and experiences that you won't find with conventional agencies."
+    },
+    "choose-your-own-pace": {
+      "badge": "Savings",
+      "title": "Choose your own pace",
+      "description": "We design flexible and competitive itineraries that perfectly adapt to your tastes and budget."
+    },
+    "enjoy-stress-free": {
+      "title": "Enjoy stress free",
+      "description": "Focus entirely on enjoying the journey while our team handles all logistics and 24/7 assistance."
+    }
   }
 }
