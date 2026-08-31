@@ -24,7 +24,7 @@ export function Footer() {
                 </span>
                 <div className='flex flex-wrap gap-x-4'>
                   <a
-                    href='https://www.google.com/maps/place/Happy+Trip+Cusco+-+Per%C3%BA/data=!4m2!3m1!1s0x0:0x17a910ad59930a80?sa=X&ved=1t:2428&ictx=111'
+                    href='https://www.google.com/maps/place/Av.+Libertadores+2,+Cusco+08007/@-13.5388577,-71.9864256,1089m/data=!3m2!1e3!4b1!4m5!3m4!1s0x916dd5c437921e55:0xb26bcd638fc845a3!8m2!3d-13.5388629!4d-71.9838453?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D'
                     target='_blank'
                     className='hover:text-australia-green text-base leading-6 font-bold underline transition-colors duration-200'
                   >
