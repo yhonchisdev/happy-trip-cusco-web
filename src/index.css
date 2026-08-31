@@ -16,9 +16,11 @@
 
   --breakpoint-xlg: 74rem;
 
+  --transition-height: grid-template-rows 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+
   --spacing-section: calc(1136px + 24px * 2);
-  --spacing-slide-review-lg: calc((100% + 16px * 2) * 0.41667 - 16px);
-  --spacing-slide-review-md: calc((100% + 16px * 2) * 0.91667 - 16px);
+  --spacing-slide-card-lg: calc((100% + 16px * 2) * 0.41667 - 16px);
+  --spacing-slide-card-md: calc((100% + 16px * 2) * 0.91667 - 16px);
   --spacing-slide-feature-lg: calc((100% + 24px * 2) * 0.41667 - 24px);
   --spacing-slide-feature-md: calc((100% + 24px * 2) * 0.91667 - 24px);
 

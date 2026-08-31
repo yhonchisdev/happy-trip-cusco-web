@@ -5,6 +5,12 @@ import { Section } from './section'
 export function Footer() {
   const { t } = useTranslation()
 
+  const handleContact = () => {
+    const encodedMessage = encodeURIComponent(t('footer.whatsapp-message'))
+    const whatsappUrl = `https://wa.me/+51945054242?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <footer className='bg-beautiful-white py-8'>
       <Section>
@@ -71,13 +77,12 @@ export function Footer() {
         </div>
       </Section>
       <div className='animate-tada fixed right-6 bottom-6'>
-        <a
-          href='https://wa.me/+51945054242'
-          target='_blank'
-          className='bg-malachite flex size-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-500 hover:scale-110 hover:opacity-80 active:scale-100'
+        <button
+          onClick={handleContact}
+          className='bg-malachite flex size-14 cursor-pointer items-center justify-center rounded-full text-white shadow-lg transition-all duration-500 hover:scale-110 hover:opacity-80 active:scale-100'
         >
           <Icons.Chat className='size-8' />
-        </a>
+        </button>
       </div>
     </footer>
   )

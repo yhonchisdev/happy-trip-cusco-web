@@ -7,6 +7,8 @@ import itinerary from '@/assets/images/travel-ticket/itinerary.jpg'
 import excursion from '@/assets/images/travel-ticket/excursion.jpg'
 import destination from '@/assets/images/travel-ticket/destination.jpg'
 
+const stars = Array.from({ length: 5 }, (_, index) => index + 1)
+
 export function TravelTicket() {
   const { t } = useTranslation()
   const [current, setCurrent] = useState<number>(0)
@@ -27,7 +29,7 @@ export function TravelTicket() {
   }, [steps.length])
 
   return (
-    <div className='animate-squeeze'>
+    <div className='animate-sway'>
       <div className='px-10 py-5'>
         <div className='relative rotate-6'>
           <Icons.Ticket className='text-malachite w-60 lg:w-80' />
@@ -48,11 +50,14 @@ export function TravelTicket() {
             })}
           </div>
           <div className='absolute top-66 left-6 flex items-center gap-1 lg:top-90 lg:left-8'>
-            <Icons.Star className='text-australia-green size-5 lg:size-6' />
-            <Icons.Star className='text-australia-green size-5 lg:size-6' />
-            <Icons.Star className='text-australia-green size-5 lg:size-6' />
-            <Icons.Star className='text-australia-green size-5 lg:size-6' />
-            <Icons.Star className='text-australia-green size-5 lg:size-6' />
+            {stars.map((star) => {
+              return (
+                <Icons.Star
+                  key={star}
+                  className='text-australia-green size-5 lg:size-6'
+                />
+              )
+            })}
           </div>
           <div className='absolute top-73 right-6 left-6 flex gap-1.75 overflow-hidden lg:top-100 lg:right-8 lg:left-8'>
             <span className='text-xl leading-6 font-black lg:text-2xl lg:leading-7'>

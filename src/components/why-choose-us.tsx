@@ -5,20 +5,20 @@ import discoverExclusiveRoutes from '@/assets/images/why-choose-us/discover-excl
 import chooseYourOwnPace from '@/assets/images/why-choose-us/choose-your-own-pace.jpg'
 import enjoyStressFree from '@/assets/images/why-choose-us/enjoy-stress-free.jpg'
 
+const steps = [
+  'discover-exclusive-routes',
+  'choose-your-own-pace',
+  'enjoy-stress-free',
+] as const
+
+const photo: Record<(typeof steps)[number], string> = {
+  'discover-exclusive-routes': discoverExclusiveRoutes,
+  'choose-your-own-pace': chooseYourOwnPace,
+  'enjoy-stress-free': enjoyStressFree,
+}
+
 export function WhyChooseUs() {
   const { t } = useTranslation()
-
-  const steps = [
-    'discover-exclusive-routes',
-    'choose-your-own-pace',
-    'enjoy-stress-free',
-  ] as const
-
-  const photo: Record<(typeof steps)[number], string> = {
-    'discover-exclusive-routes': discoverExclusiveRoutes,
-    'choose-your-own-pace': chooseYourOwnPace,
-    'enjoy-stress-free': enjoyStressFree,
-  }
 
   return (
     <div className='py-10'>
@@ -42,7 +42,7 @@ export function WhyChooseUs() {
                 key={step}
                 className='max-lg:w-slide-feature-lg max-md:w-slide-feature-md max-lg:shrink-0 max-lg:snap-start max-lg:scroll-mx-6'
               >
-                <div className='timeline-view animate-blink animate-range-[entry_5%_contain_20%]'>
+                <div className='timeline-view-inline lg:timeline-view animate-blink animate-range-[entry_5%_contain_20%]'>
                   <div className='flex flex-col items-center gap-6'>
                     <div className='relative'>
                       <img

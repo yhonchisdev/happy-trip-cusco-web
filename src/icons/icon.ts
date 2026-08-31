@@ -11,6 +11,8 @@ import Facebook from './facebook.svg?react'
 import Instagram from './instagram.svg?react'
 import Tiktok from './tiktok.svg?react'
 import Chat from './chat.svg?react'
+import Clock from './clock.svg?react'
+import Location from './location.svg?react'
 
 export const Icons = {
   Wordmark,
@@ -26,4 +28,6 @@ export const Icons = {
   Instagram,
   Tiktok,
   Chat,
+  Clock,
+  Location,
 }

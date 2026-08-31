@@ -4,10 +4,11 @@ import { Header } from './components/header'
 import { Section } from './components/section'
 import { Hero } from './components/hero'
 import { TravelTicket } from './components/travel-ticket'
-import { StoriesThatInspire } from './components/stories-that-inspire'
 import { WhyChooseUs } from './components/why-choose-us'
-import { TicketSupport } from './components/ticket-support'
-import { Faqs } from './components/faqs'
+import { TopTours } from './components/top-tours'
+import { QuoteMyTrip } from './components/quote-my-trip'
+import { StoriesThatInspire } from './components/stories-that-inspire'
+import { FrequentlyAskedQuestions } from './components/frequently-asked-questions'
 import { Footer } from './components/footer'
 
 export function App() {
@@ -33,13 +34,16 @@ export function App() {
         <WhyChooseUs />
       </Section>
       <Section>
+        <TopTours />
+      </Section>
+      <Section>
+        <QuoteMyTrip />
+      </Section>
+      <Section>
         <StoriesThatInspire />
       </Section>
       <Section>
-        <TicketSupport />
-      </Section>
-      <Section>
-        <Faqs />
+        <FrequentlyAskedQuestions />
       </Section>
       <Footer />
     </Fragment>

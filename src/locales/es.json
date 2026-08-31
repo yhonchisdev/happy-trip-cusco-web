@@ -27,7 +27,7 @@
     "badge": "VIAJERO EXPERTO",
     "title": "Historias que",
     "subtitle": "inspiran.",
-    "review": {
+    "reviews": {
       "1": {
         "rating": 5,
         "user": {
@@ -96,20 +96,56 @@
       "description": "Dedícate por completo a disfrutar del viaje mientras nuestro equipo se encarga de toda la logística y la asistencia 24/7."
     }
   },
-  "ticket-support": {
+  "top-tours": {
+    "badge": "EXPERIENCIAS IMPERDIBLES",
+    "title": "Lo Mejor de Cusco",
+    "description": "Nuestros tours estrella y los más reservados del momento. Vive las experiencias que todo viajero sueña con hacer, con la tranquilidad de un servicio garantizado de inicio a fin.",
+    "view-label": "Ver tour",
+    "tours": {
+      "1": {
+        "location": "CUSCO - MACHU PICCHU",
+        "title": "Machu Picchu Clásico en Tren",
+        "duration": "1 Día",
+        "level": "Fácil",
+        "price_from": "Desde",
+        "price": 295,
+        "description": "La forma más rápida y cómoda de conocer la maravilla mundial. Incluye traslados en tren desde Ollantaytambo, ingresos y guía profesional."
+      },
+      "2": {
+        "location": "VALLE SAGRADO - MACHU PICCHU",
+        "title": "Valle Sagrado Esencial & Machu Picchu Mágico",
+        "duration": "2 Días / 1 Noche",
+        "level": "Fácil",
+        "price_from": "Desde",
+        "price": 450,
+        "description": "Explora los mejores templos del Valle Sagrado el primer día y pasa la noche en Aguas Calientes para ver el amanecer en Machu Picchu."
+      },
+      "3": {
+        "location": "CUSCO - AVENTURA",
+        "title": "Full Day: Montaña de 7 Colores",
+        "duration": "1 Día",
+        "level": "Intermedio",
+        "price_from": "Desde",
+        "price": 45,
+        "description": "Conquista la famosa cumbre andina de Vinicunca y sus impresionantes franjas de colores minerales. Una caminata inolvidable rodeada de paisajes alpinos y alpacas locales."
+      }
+    }
+  },
+  "quote-my-trip": {
     "title": "Diseñamos el viaje ",
     "subtitle": "de tus sueños a tu medida",
     "description": "Olvídate del estrés de planificar. Nos encargamos de cada detalle para que solo te preocupes por coleccionar momentos inolvidables.",
     "button-label": "Cotizar mi viaje",
+    "whatsapp-message": "¡Hola! Vi su página web y me gustaría recibir una cotización personalizada para mi próximo viaje a Cusco.",
     "steps": {
       "1": "Cuéntanos qué experiencia buscas",
       "2": "Recibe una propuesta exclusiva",
       "3": "Viaja con asistencia 24/7"
     }
   },
-  "faqs": {
+  "frequently-asked-questions": {
     "title": "Preguntas Frecuentes",
-    "faq": {
+    "faqs": {
       "1": {
         "question": "¿Cómo recibo la confirmación de mi reserva?",
         "answer": "Una vez realizado el pago, recibirás un correo electrónico automático con tu comprobante y el itinerario detallado. También nos pondremos en contacto contigo por WhatsApp para coordinar los últimos detalles."
@@ -139,6 +175,7 @@
       "address": "Cómo llegar",
       "phone": "Consultar disponibilidad",
       "email": "Hacer una pregunta"
-    }
+    },
+    "whatsapp-message": "¡Hola! Estoy navegando por su página web y me gustaría hacer una consulta sobre sus tours."
   }
 }

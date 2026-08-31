@@ -37,9 +37,9 @@ export function StoriesThatInspire() {
           return (
             <div
               key={review}
-              className='max-lg:w-slide-review-lg max-md:w-slide-review-md max-lg:shrink-0 max-lg:snap-start max-lg:scroll-mx-6'
+              className='max-lg:w-slide-card-lg max-md:w-slide-card-md max-lg:shrink-0 max-lg:snap-start max-lg:scroll-mx-6'
             >
-              <div className='timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
+              <div className='timeline-view-inline lg:timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
                 <div className='border-sea-glass flex flex-col gap-6 rounded-2xl border bg-white p-6 shadow-lg'>
                   <div className='flex items-center gap-1'>
                     {scores.map((score) => {
@@ -49,14 +49,16 @@ export function StoriesThatInspire() {
                           className={cn('text-sea-glass size-5', {
                             'text-australia-green':
                               score <=
-                              t(`stories-that-inspire.review.${review}.rating`),
+                              t(
+                                `stories-that-inspire.reviews.${review}.rating`,
+                              ),
                           })}
                         />
                       )
                     })}
                   </div>
                   <span className='text-lunar-green text-base leading-6'>
-                    {t(`stories-that-inspire.review.${review}.description`)}
+                    {t(`stories-that-inspire.reviews.${review}.description`)}
                   </span>
                   <div className='flex items-center gap-4'>
                     <div
@@ -72,16 +74,16 @@ export function StoriesThatInspire() {
                       )}
                     >
                       {t(
-                        `stories-that-inspire.review.${review}.user.name`,
+                        `stories-that-inspire.reviews.${review}.user.name`,
                       ).charAt(0)}
                     </div>
                     <div className='flex flex-col'>
                       <span className='text-base leading-6 font-bold'>
-                        {t(`stories-that-inspire.review.${review}.user.name`)}
+                        {t(`stories-that-inspire.reviews.${review}.user.name`)}
                       </span>
                       <span className='text-lunar-green text-sm leading-4.5'>
                         {t(
-                          `stories-that-inspire.review.${review}.user.location`,
+                          `stories-that-inspire.reviews.${review}.user.location`,
                         )}
                       </span>
                     </div>

@@ -4,6 +4,15 @@ import { Button } from './button'
 export function Hero() {
   const { t } = useTranslation()
 
+  const handleStartAdventure = () => {
+    const element = document.querySelector('[data-navitation="top-tours"]')
+    if (!element) return
+    element.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <div className='flex max-w-150 flex-col gap-6 max-lg:items-center max-lg:text-center'>
       <div className='animate-fade-in-down'>
@@ -32,7 +41,9 @@ export function Hero() {
         </span>
       </div>
       <div className='animate-jump'>
-        <Button widthFit>{t('hero.start-adventure-label')}</Button>
+        <Button widthFit onClick={handleStartAdventure}>
+          {t('hero.start-adventure-label')}
+        </Button>
       </div>
     </div>
   )

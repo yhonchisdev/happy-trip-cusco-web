@@ -5,8 +5,16 @@ import { Button } from './button'
 const stars = Array.from({ length: 5 }, (_, index) => index + 1)
 const steps = [1, 2, 3] as const
 
-export function TicketSupport() {
+export function QuoteMyTrip() {
   const { t } = useTranslation()
+
+  const handleQuote = () => {
+    const encodedMessage = encodeURIComponent(
+      t('quote-my-trip.whatsapp-message'),
+    )
+    const whatsappUrl = `https://wa.me/+51945054242?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+  }
 
   return (
     <div className='py-10'>
@@ -36,25 +44,25 @@ export function TicketSupport() {
                 <div className='flex flex-col'>
                   <div className='timeline-view animate-fade-in-left animate-range-[entry_5%_contain_20%]'>
                     <span className='text-[36px] leading-10 font-black text-white md:text-[48px] md:leading-14'>
-                      {t('ticket-support.title')}
+                      {t('quote-my-trip.title')}
                     </span>
                   </div>
                   <div className='timeline-view animate-fade-in-right animate-range-[entry_5%_contain_20%]'>
                     <span className='text-[36px] leading-10 font-black md:text-[48px] md:leading-14'>
-                      {t('ticket-support.subtitle')}
+                      {t('quote-my-trip.subtitle')}
                     </span>
                   </div>
                 </div>
                 <div className='timeline-view animate-fade-in-down animate-range-[entry_5%_contain_20%]'>
                   <span className='text-lunar-green text-base leading-6'>
-                    {t('ticket-support.description')}
+                    {t('quote-my-trip.description')}
                   </span>
                 </div>
               </div>
               <div className='timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
                 <div className='w-full drop-shadow-lg lg:w-fit'>
-                  <Button variant='third'>
-                    {t('ticket-support.button-label')}
+                  <Button variant='third' onClick={handleQuote}>
+                    {t('quote-my-trip.button-label')}
                   </Button>
                 </div>
               </div>
@@ -81,7 +89,7 @@ export function TicketSupport() {
                       </div>
                       <div className='flex-1'>
                         <span className='text-base leading-6 font-bold text-white md:text-xl md:leading-7.5'>
-                          {t(`ticket-support.steps.${step}`)}
+                          {t(`quote-my-trip.steps.${step}`)}
                         </span>
                       </div>
                     </div>

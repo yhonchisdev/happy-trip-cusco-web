@@ -27,7 +27,7 @@
     "badge": "EXPERT TRAVELER",
     "title": "Stories that",
     "subtitle": "inspire.",
-    "review": {
+    "reviews": {
       "1": {
         "rating": 5,
         "user": {
@@ -96,20 +96,56 @@
       "description": "Focus entirely on enjoying the journey while our team handles all logistics and 24/7 assistance."
     }
   },
-  "ticket-support": {
+  "top-tours": {
+    "badge": "MUST-SEE EXPERIENCES",
+    "title": "The Best of Cusco",
+    "description": "Our signature and most-booked tours right now. Experience the adventures every traveler dreams of, with the peace of mind of a guaranteed service from start to finish.",
+    "view-label": "View tour",
+    "tours": {
+      "1": {
+        "location": "CUSCO - MACHU PICCHU",
+        "title": "Classic Machu Picchu by Train",
+        "duration": "1 Day",
+        "level": "Easy",
+        "price_from": "From",
+        "price": 295,
+        "description": "The fastest and most comfortable way to see the world wonder. Includes train transfers from Ollantaytambo, entry tickets, and a professional guide."
+      },
+      "2": {
+        "location": "SACRED VALLEY - MACHU PICCHU",
+        "title": "Essential Sacred Valley & Magical Machu Picchu",
+        "duration": "2 Days / 1 Night",
+        "level": "Easy",
+        "price_from": "From",
+        "price": 450,
+        "description": "Explore the top temples of the Sacred Valley on day one, then spend the night in Aguas Calientes to catch the sunrise at Machu Picchu."
+      },
+      "3": {
+        "location": "CUSCO - ADVENTURE",
+        "title": "Full Day: Rainbow Mountain",
+        "duration": "1 Day",
+        "level": "Intermediate",
+        "price_from": "From",
+        "price": 45,
+        "description": "Conquer the famous Andean summit of Vinicunca and its stunning mineral-colored ridges. An unforgettable hike surrounded by alpine landscapes and local alpacas."
+      }
+    }
+  },
+  "quote-my-trip": {
     "title": "We design the trip",
     "subtitle": "of your dreams, tailored just for you",
     "description": "Forget the stress of planning. We take care of every single detail so you only have to worry about collecting unforgettable moments.",
     "button-label": "Get a quote for my trip",
+    "whatsapp-message": "Hello! I saw your website and I would like to get a personalized quote for my upcoming trip to Cusco.",
     "steps": {
       "1": "Tell us what experience you are looking for",
       "2": "Receive an exclusive proposal",
       "3": "Travel with 24/7 support"
     }
   },
-  "faqs": {
+  "frequently-asked-questions": {
     "title": "Frequently Asked Questions",
-    "faq": {
+    "faqs": {
       "1": {
         "question": "How do I receive my booking confirmation?",
         "answer": "Once payment is complete, you will receive an automatic email with your voucher and detailed itinerary. We will also contact you via WhatsApp to coordinate the final details."
@@ -139,6 +175,7 @@
       "address": "Get directions",
       "phone": "Check availability",
       "email": "Ask a question"
-    }
+    },
+    "whatsapp-message": "Hello! I am browsing your website and I would like to ask a question about your tours."
   }
 }
