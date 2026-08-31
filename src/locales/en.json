@@ -101,6 +101,8 @@
     "title": "The Best of Cusco",
     "description": "Our signature and most-booked tours right now. Experience the adventures every traveler dreams of, with the peace of mind of a guaranteed service from start to finish.",
     "view-label": "View tour",
+    "book-label": "Book",
+    "whatsapp-message": "Hello, I am interested in getting more information about the following tour:\n\n*Tour:* {{name}}\n*Duration:* {{duration}}\n*Price:* {{price}}\n\nDo you have availability?",
     "tours": {
       "1": {
         "location": "CUSCO - MACHU PICCHU",
@@ -109,7 +111,53 @@
         "level": "Easy",
         "price_from": "From",
         "price": 295,
-        "description": "The fastest and most comfortable way to see the world wonder. Includes train transfers from Ollantaytambo, entry tickets, and a professional guide."
+        "description": "The fastest and most comfortable way to visit the wonder of the world. Includes train transfers from Ollantaytambo, entrance tickets and a professional guide.",
+        "departure-start": {
+          "title": "Starting Point",
+          "description": "Direct pickup at the door of your hotel located in the historic center of Cusco (between 04:00 AM and 04:30 AM)."
+        },
+        "departure-end": {
+          "title": "Return Point",
+          "description": "Return to downtown Cusco, ending the transfer in a central square (Plaza San Francisco or Regocijo) due to traffic and narrow streets in the city center."
+        },
+        "itinerary": {
+          "title": "Tour Itinerary",
+          "description": [
+            "Your adventure will begin very early with a direct pickup at your hotel in Cusco to board our tourist transport heading to the Sacred Valley. After a scenic drive, you will arrive at the historic Ollantaytambo railway station, where you will board a tourist train for an almost two-hour journey alongside the impressive Vilcanota River, enjoying the transition from the Andean landscape to the cloud forest. Upon arrival at the Aguas Calientes station (Machu Picchu Pueblo), our local guide will be waiting for you to head together to the Consettur bus station, where you will begin a thirty-minute ascent along the winding Hiram Bingham road to the gates of the wonder of the world.",
+            "Once inside the mythical Inca citadel, you will start a guided tour of approximately two and a half hours through the assigned classic circuit. Alongside our certified guide, you will discover the history, architecture and best-kept secrets of temples, plazas and agricultural terraces, also ensuring the best spots to capture the most iconic photos of the trip. After the visit, you will descend by return bus to Aguas Calientes, where you will have free time to have lunch on your own, explore the town or visit the local craft market. In the afternoon, you will head to the station to board the return train to Ollantaytambo, where our private bus will be waiting to transfer you back to the city of Cusco, concluding this travel day."
+          ]
+        },
+        "inclusions": {
+          "title": "What the tour includes",
+          "list": [
+            "Shared tourist transportation from Cusco to Ollantaytambo station (round trip).",
+            "Round-trip tourist train tickets (Inca Rail or PeruRail services depending on availability) to Aguas Calientes.",
+            "Official Consettur round-trip bus ticket between Aguas Calientes and the Machu Picchu citadel.",
+            "Official entrance ticket to the classic circuit of the llaqta of Machu Picchu.",
+            "Certified professional bilingual guiding service (Spanish / English) inside the archaeological site."
+          ]
+        },
+        "exclusions": {
+          "title": "What is NOT included",
+          "list": [
+            "Meals not specified (lunches and dinners in Aguas Calientes are at the passenger's expense).",
+            "Optional upgrade to higher-category train services (such as the Vistadome train).",
+            "Tips for the guide and transport drivers.",
+            "Personal expenses, souvenirs or shopping at the craft market."
+          ]
+        },
+        "recommendations": {
+          "title": "What to bring?",
+          "list": [
+            "It is mandatory to carry your original passport or valid physical ID throughout the entire trip; you will not be allowed to board the train or enter Machu Picchu with copies or photos.",
+            "Train operators strictly restrict luggage to one hand backpack per person with a maximum of 5 kg (11 lbs). We recommend leaving your large suitcases in free storage at your hotel in Cusco.",
+            "Layered clothing (windbreaker jacket, light t-shirt), rain poncho (Andean weather is unpredictable), comfortable hiking shoes with good grip, sunscreen, sunglasses, hat and mosquito repellent."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Booking and Cancellation Policies",
+          "description": "All personal information provided for the purchase of this tour (full names, document numbers and dates of birth) is protected under our strict confidentiality policies and is used exclusively for issuing your official tickets. In accordance with current regulations of the Ministry of Culture and the railway companies of Peru, Machu Picchu entrance tickets and train tickets are nominative, strictly non-refundable, non-transferable and do not allow date changes under any circumstances after they have been issued. The agency is not responsible for cancellations due to incorrect data provided by the user or severe external weather factors."
+        }
       },
       "2": {
         "location": "SACRED VALLEY - MACHU PICCHU",
@@ -118,18 +166,173 @@
         "level": "Easy",
         "price_from": "From",
         "price": 450,
-        "description": "Explore the top temples of the Sacred Valley on day one, then spend the night in Aguas Calientes to catch the sunrise at Machu Picchu."
+        "description": "Explore the best temples of the Sacred Valley on the first day and spend the night in Aguas Calientes to see the sunrise at Machu Picchu.",
+        "departure-start": {
+          "title": "Starting Point",
+          "description": "Direct pickup at the door of your hotel in the historic center of Cusco on Day 1 (between 07:00 AM and 07:30 AM)."
+        },
+        "departure-end": {
+          "title": "Return Point",
+          "description": "Return to downtown Cusco on Day 2, ending the transfer in a central square (Plaza San Francisco or Regocijo) around 07:30 PM."
+        },
+        "itinerary": {
+          "title": "Tour Itinerary",
+          "description": [
+            "Your journey will begin on the first day with pickup at your hotel to start a scenic tour to the majestic Sacred Valley of the Incas. The first stop will be at the Taray viewpoint to capture panoramic views of the valley, continuing to the Pisac archaeological site, famous for its impressive agricultural terraces and its colorful artisan market. After exploring the site, you will continue to the town of Urubamba to enjoy a comforting buffet lunch with local cuisine. In the afternoon, you will visit the imposing living fortress of Ollantaytambo, an architectural jewel of the Incas with cobbled streets. At the end of the afternoon, you will head to the Ollantaytambo railway station to board the train to Aguas Calientes (Machu Picchu Pueblo), a mystical journey alongside the Vilcanota River. Upon arrival, you will be transferred to your selected hotel to rest.",
+            "The second day will be reserved for pure magic. Very early, you will board together with your guide the official Consettur bus that will ascend for thirty minutes along the Hiram Bingham road to the entrance of the wonder of the world. Once inside the mythical citadel of Machu Picchu, you will take a guided tour of approximately two and a half hours through its main temples, royal residences and agricultural sectors, with ideal time for your souvenir photos. After the guided tour, you will descend by return bus to Aguas Calientes to have lunch on your own and explore the town. Finally, in the afternoon you will board the return train to Ollantaytambo, where our private transport will be waiting to transfer you back to the city of Cusco."
+          ]
+        },
+        "inclusions": {
+          "title": "What the tour includes",
+          "list": [
+            "Tourist transportation for the Sacred Valley tour.",
+            "Round-trip tourist train tickets (Inca Rail or PeruRail services) from Ollantaytambo to Aguas Calientes.",
+            "01 night of selected accommodation in Aguas Calientes (includes breakfast on Day 2).",
+            "Official Consettur round-trip bus ticket between Aguas Calientes and Machu Picchu.",
+            "Official entrance ticket to the Machu Picchu archaeological site.",
+            "Certified professional bilingual guiding service (Spanish / English) at the attractions.",
+            "01 gourmet buffet lunch on Day 1 in Urubamba."
+          ]
+        },
+        "exclusions": {
+          "title": "What is NOT included",
+          "list": [
+            "Cusco Tourist Ticket (BTC) required for archaeological entrances in Pisac and Ollantaytambo.",
+            "Meals not specified (lunch and dinner on Day 2 in Aguas Calientes are at the passenger's expense).",
+            "Tips for the guide, drivers and hotel staff.",
+            "Personal expenses or craft purchases."
+          ]
+        },
+        "recommendations": {
+          "title": "What to bring?",
+          "list": [
+            "Remember that you must purchase the Cusco Tourist Ticket (partial or general) at the first checkpoint to enter Pisac and Ollantaytambo.",
+            "It is mandatory to carry your original passport or valid physical ID throughout the entire trip; you will be asked for it at each station and when entering Machu Picchu.",
+            "Leave your large and heavy luggage in free storage at your hotel in Cusco. For the train trip and overnight stay in Aguas Calientes, bring only a hand backpack of maximum 5 kg (11 lbs) with light changes of clothes, windbreaker jacket, rain poncho, sunscreen and mosquito repellent."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Booking and Cancellation Policies",
+          "description": "All personal information provided during the booking process (full names, ID numbers and passports) is strictly protected under our data confidentiality and encryption policies, being used only for issuing your official passes. In strict compliance with the Ministry of Culture of Peru and railway operators, entrance tickets to Machu Picchu, Pisac, Ollantaytambo and train tickets are nominative, non-transferable and strictly non-refundable nor subject to date changes after purchase. The agency is not responsible for itinerary variations caused by extreme weather factors or roadblocks beyond the operation."
+        }
       },
       "3": {
         "location": "CUSCO - ADVENTURE",
         "title": "Full Day: Rainbow Mountain",
         "duration": "1 Day",
-        "level": "Intermediate",
+        "level": "Moderate",
         "price_from": "From",
         "price": 45,
-        "description": "Conquer the famous Andean summit of Vinicunca and its stunning mineral-colored ridges. An unforgettable hike surrounded by alpine landscapes and local alpacas."
+        "description": "Conquer the famous Andean summit of Vinicunca and its impressive stripes of mineral colors. An unforgettable hike surrounded by alpine landscapes and local alpacas.",
+        "departure-start": {
+          "title": "Starting Point",
+          "description": "Direct pickup at the door of your hotel in the historic center of Cusco (between 04:00 AM and 04:30 AM)."
+        },
+        "departure-end": {
+          "title": "Return Point",
+          "description": "Return to downtown Cusco, ending the transfer near the Plaza de Armas (Plaza Regocijo or San Francisco) at approximately 04:30 PM."
+        },
+        "itinerary": {
+          "title": "Tour Itinerary",
+          "description": [
+            "Your adventure will begin in the early morning with pickup at your hotel in Cusco to start a journey by tourist transport to the south of the Sacred Valley. After a journey of approximately two hours by road, you will make a stop in the town of Cusipata to enjoy a comforting buffet breakfast that will give you the necessary energy for the day. Afterwards, you will continue by bus for one more hour to Phulawasipata, the starting point of the hike located at 4,600 meters above sea level. After receiving instructions from our certified guide and your trekking poles, you will begin the approximately one and a half hour hike uphill (depending on fitness level) surrounded by imposing Andean landscapes, snow-capped peaks and herds of alpacas and llamas.",
+            "Upon reaching the summit at 5,036 meters high, you will be rewarded with the majestic view of the Rainbow Mountain (Vinicunca) and the imposing Ausangate snow-capped mountain. You will have enough time to enjoy the panorama, listen to the guide's geological explanation and capture the most iconic photos of the trip. After the visit, you will begin the descent back to the bus checkpoint, a one-hour downhill journey. You will board our transport again to return to Cusipata, where a well-deserved buffet lunch with local and vegetarian options will be waiting for you. Finally, you will begin the return journey to Cusco, concluding this high mountain day in the city center."
+          ]
+        },
+        "inclusions": {
+          "title": "What the tour includes",
+          "list": [
+            "Shared tourist transportation from Cusco to the starting point of the hike (round trip).",
+            "Certified professional bilingual guiding service (Spanish / English) specialized in high mountain.",
+            "01 full buffet breakfast at the local restaurant in Cusipata.",
+            "01 buffet lunch with local cuisine in Cusipata.",
+            "Wooden trekking poles for support during the hike.",
+            "First aid kit and emergency oxygen balloon in charge of the guide."
+          ]
+        },
+        "exclusions": {
+          "title": "What is NOT included",
+          "list": [
+            "Official entrance ticket to the Vinicunca community (paid in cash directly on the route, approximately S/. 25 to S/. 30 PEN).",
+            "Emergency horse rental provided by local community members (approximate cost of S/. 70 to S/. 90 PEN per leg, subject to availability).",
+            "Water, hydrating drinks, snacks or tips for the technical team.",
+            "Personal expenses of any kind during the journey."
+          ]
+        },
+        "recommendations": {
+          "title": "What to bring?",
+          "list": [
+            "It is strongly recommended to have at least 2 days of prior acclimatization in the city of Cusco before taking this tour, as the hike exceeds 5,000 meters in altitude.",
+            "Warm layered clothing (thermal jacket, gloves, wool hat or beanie), trekking shoes with good grip (no flat shoes), rain poncho, sunglasses, high protection sunscreen and lip balm.",
+            "Bring cash in soles (small coins) for bathrooms along the route and entrance fees. It is advisable to bring altitude sickness pills (soroche), coca leaves or lemon candies, and a bottle of water or isotonic drink."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Booking and Cancellation Policies",
+          "description": "All personal information collected during the booking process for this adventure activity is protected under our strict confidentiality policies and is handled exclusively for internal logistics and passenger safety. Due to the extreme nature of the terrain and unpredictable weather factors of the high Andean mountains, the agency reserves the right to modify the itinerary or suspend the hike if weather conditions put the physical integrity of passengers at risk. Seats and transportation services are nominative and non-refundable and non-transferable in case of voluntary non-attendance (No Show) on the day of the tour."
+        }
+      },
+      "4": {
+        "location": "CUSCO - ADVENTURE",
+        "title": "Full Day: Humantay Lake",
+        "duration": "1 Day",
+        "level": "Moderate",
+        "price_from": "From",
+        "price": 50,
+        "description": "Explore one of the most beautiful glacial lakes in Peru. Hike to the foot of the imposing Salkantay snow-capped mountain and discover its impressive turquoise waters surrounded by spectacular Andean landscapes.",
+        "departure-start": {
+          "title": "Starting Point",
+          "description": "Direct pickup at the door of your hotel located in the historic center of Cusco (between 04:00 AM and 04:30 AM)."
+        },
+        "departure-end": {
+          "title": "Return Point",
+          "description": "Return to downtown Cusco, ending the transfer in a central square (Plaza Regocijo or San Francisco) at approximately 05:30 PM."
+        },
+        "itinerary": {
+          "title": "Tour Itinerary",
+          "description": [
+            "Conquer the famous Andean summit of Soraypampa and its impressive stripes of turquoise mineral waters. Your adventure will begin very early with pickup at your hotel in Cusco to start a journey by tourist transport to the northwest. After a journey of approximately two hours by road, you will make a stop in the town of Mollepata to enjoy a comforting buffet breakfast that will give you the necessary energy for the day. Afterwards, you will continue by bus for one more hour to Soraypampa, the starting point of the hike. After receiving instructions from our certified guide and your trekking poles, you will begin the ascent on foot surrounded by imposing alpine landscapes and local alpacas. Upon reaching the summit, you will be rewarded with the majestic view of Humantay Lake and the imposing Salkantay snow-capped mountain. You will have enough time to enjoy the panorama, listen to the mystical explanation and capture photos. After the visit, you will begin an unforgettable downhill hike back to the bus checkpoint. You will board our transport again to return to Mollepata, where a well-deserved buffet lunch will be waiting for you. Finally, you will begin the return journey to Cusco, concluding this adventure day in the city center."
+          ]
+        },
+        "inclusions": {
+          "title": "What the tour includes",
+          "list": [
+            "Shared tourist transportation from Cusco to the starting point in Soraypampa (round trip).",
+            "Certified professional bilingual guiding service (Spanish / English) specialized in trekking routes.",
+            "01 full buffet breakfast at the local restaurant in Mollepata.",
+            "01 buffet lunch with local cuisine in Mollepata.",
+            "Wooden trekking poles for support during the ascent.",
+            "First aid kit and emergency oxygen balloon in charge of the lead guide."
+          ]
+        },
+        "exclusions": {
+          "title": "What is NOT included",
+          "list": [
+            "Official entrance ticket to the Mollepata / Humantay community (paid in cash directly on the route, approximately S/. 20 PEN).",
+            "Emergency horse rental provided by local muleteers (approximate cost of S/. 80 PEN per leg, depending on availability).",
+            "Water, hydrating drinks, snacks or tips for the technical team of the agency.",
+            "Personal expenses of any kind during the journey."
+          ]
+        },
+        "recommendations": {
+          "title": "What to bring?",
+          "list": [
+            "It is recommended to have at least 2 days of prior acclimatization in the city of Cusco before taking this tour, as the lake is located at 4,200 meters altitude.",
+            "Warm layered clothing (windbreaker jacket, gloves, hat for cold), trekking shoes with good grip (avoid flat or smooth shoes), rain poncho, sunglasses, high protection sunscreen and lip balm.",
+            "Bring cash in soles (small coins) for restroom services along the route. It is advisable to take altitude sickness pills or coca candies before starting the trek."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Booking and Cancellation Policies",
+          "description": "All personal information collected during the booking process for this adventure activity is protected under our strict confidentiality policies and is handled exclusively for internal logistics and passenger safety. Due to the nature of the terrain and unpredictable weather factors of the high Andean mountains, the agency reserves the right to modify the itinerary or suspend the hike if weather conditions put the physical integrity of passengers at risk. Seats and transportation services are nominative and non-refundable and non-transferable in case of voluntary non-attendance (No Show) on the day of the tour."
+        }
       }
     }
+  },
+  "abouts-us": {
+    "title": "About Us",
+    "description": "We are an organization specialized in tourism services; our tours mainly cover Cusco and southern Peru. We are an adventure travel agency passionate about Peru's cultural and natural richness, specializing in creating unique experiences in Cusco and Machu Picchu. We focus on providing personalized service that combines adventure, history, and comfort.",
+    "slogan": "Our commitment is to offer our travelers an authentic and memorable experience while supporting responsible and sustainable tourism."
   },
   "quote-my-trip": {
     "title": "We design the trip",

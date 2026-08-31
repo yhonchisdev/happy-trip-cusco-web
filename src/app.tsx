@@ -6,6 +6,7 @@ import { Hero } from './components/hero'
 import { TravelTicket } from './components/travel-ticket'
 import { WhyChooseUs } from './components/why-choose-us'
 import { TopTours } from './components/top-tours'
+import { AboutUs } from './components/about-us'
 import { QuoteMyTrip } from './components/quote-my-trip'
 import { StoriesThatInspire } from './components/stories-that-inspire'
 import { FrequentlyAskedQuestions } from './components/frequently-asked-questions'
@@ -35,6 +36,9 @@ export function App() {
       </Section>
       <Section>
         <TopTours />
+      </Section>
+      <Section>
+        <AboutUs />
       </Section>
       <Section>
         <QuoteMyTrip />

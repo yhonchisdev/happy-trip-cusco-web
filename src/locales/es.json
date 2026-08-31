@@ -101,6 +101,8 @@
     "title": "Lo Mejor de Cusco",
     "description": "Nuestros tours estrella y los más reservados del momento. Vive las experiencias que todo viajero sueña con hacer, con la tranquilidad de un servicio garantizado de inicio a fin.",
     "view-label": "Ver tour",
+    "book-label": "Reservar",
+    "whatsapp-message": "Hola, me interesa obtener más información sobre el siguiente tour:\n\n*Tour:* {{name}}\n*Duración:* {{duration}}\n*Precio:* {{price}}\n\n¿Tienen disponibilidad?",
     "tours": {
       "1": {
         "location": "CUSCO - MACHU PICCHU",
@@ -109,7 +111,53 @@
         "level": "Fácil",
         "price_from": "Desde",
         "price": 295,
-        "description": "La forma más rápida y cómoda de conocer la maravilla mundial. Incluye traslados en tren desde Ollantaytambo, ingresos y guía profesional."
+        "description": "La forma más rápida y cómoda de conocer la maravilla mundial. Incluye traslados en tren desde Ollantaytambo, ingresos y guía profesional.",
+        "departure-start": {
+          "title": "Punto de Inicio",
+          "description": "Recojo directo en la puerta de tu hotel ubicado en el centro histórico de Cusco (entre las 04:00 AM y 04:30 AM)."
+        },
+        "departure-end": {
+          "title": "Punto de Retorno",
+          "description": "Retorno al centro de la ciudad de Cusco, finalizando el traslado en una plaza céntrica (Plaza San Francisco o Regocijo) debido al tráfico y calles estrechas del centro."
+        },
+        "itinerary": {
+          "title": "Recorrido del Tour",
+          "description": [
+            "Tu aventura comenzará muy temprano con el recojo directo en tu hotel en Cusco para abordar nuestro transporte turístico con dirección al Valle Sagrado. Tras un viaje escénico por carretera, llegarás a la histórica estación ferroviaria de Ollantaytambo, donde embarcarás en un tren turístico que te llevará en un trayecto de casi dos horas rodeando el imponente río Vilcanota y disfrutando de la transición del paisaje andino hacia la ceja de selva. Al arribar a la estación de Aguas Calientes (Machu Picchu Pueblo), nuestro guía local te estará esperando para dirigirse juntos a la estación de buses Consettur, donde emprenderás un ascenso de treinta minutos por la sinuosa carretera Hiram Bingham hasta las puertas de la maravilla mundial.",
+            "Una vez dentro de la mítica ciudadela inca, iniciarás un recorrido guiado de aproximadamente dos horas y media a través del circuito clásico asignado. Junto a nuestro guía certificado, descubrirás la historia, arquitectura y los secretos mejor guardados de templos, plazas y terrazas agrícolas, asegurando también los mejores puntos para capturar las fotografías más icónicas del viaje. Finalizada la visita, descenderás en bus de retorno hacia Aguas Calientes, donde tendrás tiempo libre para almorzar por tu cuenta, explorar el pueblo o visitar el mercado artesanal local. Por la tarde, te presentarás en la estación para abordar el tren de regreso a Ollantaytambo, lugar donde nuestro bus privado te estará esperando para trasladarte finalmente de retorno a la ciudad de Cusco, concluyendo este día de viaje."
+          ]
+        },
+        "inclusions": {
+          "title": "Lo que incluye el tour",
+          "list": [
+            "Traslado en transporte turístico compartido desde Cusco hasta la estación de Ollantaytambo (ida y vuelta).",
+            "Tickets de tren turístico de ida y vuelta (servicios Inca Rail o PeruRail según disponibilidad) hacia Aguas Calientes.",
+            "Ticket de bus oficial Consettur de subida y bajada entre Aguas Calientes y la ciudadela de Machu Picchu.",
+            "Boleto de ingreso oficial al circuito clásico de la llaqta de Machu Picchu.",
+            "Servicio de guiado profesional bilingüe certificado (español / inglés) dentro de la zona arqueológica."
+          ]
+        },
+        "exclusions": {
+          "title": "Lo que NO incluye",
+          "list": [
+            "Alimentación no especificada (almuerzos y cenas en Aguas Calientes corren por cuenta del pasajero).",
+            "Upgrade opcional a servicios de tren de categoría superior (como el tren Vistadome).",
+            "Propinas para el guía y los conductores del transporte.",
+            "Gastos personales, recuerdos o compras en el mercado artesanal."
+          ]
+        },
+        "recommendations": {
+          "title": "¿Qué se recomienda llevar?",
+          "list": [
+            "Es obligatorio portar tu pasaporte original o DNI vigente físico durante todo el viaje; no te permitirán abordar el tren ni ingresar a Machu Picchu con copias o fotos.",
+            "Las operadoras de tren restringen estrictamente el equipaje a una mochila de mano por persona de máximo 5 kg (11 lbs). Te recomendamos dejar tus maletas grandes bajo custodia gratuita en tu hotel de Cusco.",
+            "Ropa en capas (casaca cortavientos, polo ligero), poncho de lluvia (el clima andino es impredecible), zapatillas cómodas para caminata con buen agarre, bloqueador solar, lentes de sol, gorra y repelente de mosquitos."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Políticas de Reserva y Cancelación",
+          "description": "Toda la información personal proporcionada para la compra de este tour (nombres completos, números de documento y fechas de nacimiento) está protegida bajo nuestras estrictas políticas de confidencialidad y se utiliza exclusivamente para la emisión de tus tickets oficiales. De acuerdo con las regulaciones vigentes del Ministerio de Cultura y las empresas ferroviarias de Perú, los boletos de ingreso a Machu Picchu y los pasajes de tren son nominativos, estrictamente no reembolsables, no transferibles y no permiten cambios de fecha bajo ninguna circunstancia tras haber sido emitidos. La agencia no se hace responsable por cancelaciones derivadas de datos incorrectos provistos por el usuario o factores climáticos externos severos."
+        }
       },
       "2": {
         "location": "VALLE SAGRADO - MACHU PICCHU",
@@ -118,7 +166,55 @@
         "level": "Fácil",
         "price_from": "Desde",
         "price": 450,
-        "description": "Explora los mejores templos del Valle Sagrado el primer día y pasa la noche en Aguas Calientes para ver el amanecer en Machu Picchu."
+        "description": "Explora los mejores templos del Valle Sagrado el primer día y pasa la noche en Aguas Calientes para ver el amanecer en Machu Picchu.",
+        "departure-start": {
+          "title": "Punto de Inicio",
+          "description": "Recojo directo en la puerta de tu hotel en el centro histórico de Cusco el Día 1 (entre las 07:00 AM y 07:30 AM)."
+        },
+        "departure-end": {
+          "title": "Punto de Retorno",
+          "description": "Retorno al centro de la ciudad de Cusco el Día 2, finalizando el traslado en una plaza céntrica (Plaza San Francisco o Regocijo) alrededor de las 07:30 PM."
+        },
+        "itinerary": {
+          "title": "Recorrido del Tour",
+          "description": [
+            "Tu viaje comenzará el primer día con el recojo en tu hotel para iniciar un recorrido escénico hacia el majestuoso Valle Sagrado de los Incas. La primera parada será en el mirador de Taray para capturar vistas panorámicas del valle, continuando hacia el centro arqueológico de Pisac, famoso por sus impresionantes terrazas agrícolas y su colorido mercado artesanal. Tras explorar el lugar, avanzarás hacia la localidad de Urubamba para disfrutar de un reconfortante almuerzo buffet con gastronomía local. Por la tarde, visitarás la imponente fortaleza viviente de Ollantaytambo, una joya arquitectónica inca de calles empedradas. Al finalizar la tarde, te dirigirás a la estación ferroviaria de Ollantaytambo para abordar el tren hacia Aguas Calientes (Machu Picchu Pueblo), un trayecto místico al lado del río Vilcanota. Al llegar, serás trasladado a tu hotel seleccionado para descansar.",
+            "El segundo día estará reservado para la magia pura. Muy temprano, abordarás junto a tu guía el bus oficial Consettur que ascenderá durante treinta minutos por la carretera Hiram Bingham hasta el ingreso de la maravilla del mundo. Una vez dentro de la mítica ciudadela de Machu Picchu, realizarás un recorrido guiado de aproximadamente dos horas y media a través de sus principales templos, residencias reales y sectores agrícolas, con tiempo ideal para tus fotografías de recuerdo. Finalizado el guiado, descenderás en bus de retorno a Aguas Calientes para almorzar por tu cuenta y explorar el pueblo. Finalmente, por la tarde abordarás el tren de regreso a Ollantaytambo, donde nuestro transporte privado te estará esperando para trasladarte de retorno a la ciudad de Cusco."
+          ]
+        },
+        "inclusions": {
+          "title": "Lo que incluye el tour",
+          "list": [
+            "Traslado en transporte turístico para el tour del Valle Sagrado.",
+            "Tickets de tren turístico de ida y vuelta (servicios Inca Rail o PeruRail) desde Ollantaytambo hacia Aguas Calientes.",
+            "01 noche de hospedaje seleccionado en Aguas Calientes (incluye desayuno del Día 2).",
+            "Ticket de bus oficial Consettur de subida y bajada entre Aguas Calientes y Machu Picchu.",
+            "Boleto de ingreso oficial a la zona arqueológica de Machu Picchu.",
+            "Servicio de guiado profesional bilingüe certificado (español / inglés) en los atractivos.",
+            "01 almuerzo buffet gourmet el Día 1 en Urubamba."
+          ]
+        },
+        "exclusions": {
+          "title": "Lo que NO incluye",
+          "list": [
+            "Boleto Turístico de Cusco (BTC) requerido para los ingresos arqueológicos en Pisac y Ollantaytambo.",
+            "Alimentación no especificada (almuerzo y cena del Día 2 en Aguas Calientes corren por cuenta del pasajero).",
+            "Propinas para el guía, conductores y personal de hotel.",
+            "Gastos personales o compras de artesanías."
+          ]
+        },
+        "recommendations": {
+          "title": "¿Qué se recomienda llevar?",
+          "list": [
+            "Recuerda que debes adquirir el Boleto Turístico de Cusco (parcial o general) en el primer punto de control para poder ingresar a Pisac y Ollantaytambo.",
+            "Es obligatorio portar tu pasaporte original o DNI vigente físico durante todo el viaje; te lo pedirán en cada estación y al entrar a Machu Picchu.",
+            "Deja tus maletas grandes y pesadas bajo custodia gratuita en tu hotel de Cusco. Para el viaje en tren y el pernocte en Aguas Calientes, lleva solo una mochila de mano de máximo 5 kg (11 lbs) con mudas de ropa ligera, casaca cortavientos, poncho de lluvia, bloqueador solar y repelente de mosquitos."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Políticas de Reserva y Cancelación",
+          "description": "Toda la información personal suministrada durante el proceso de reserva (nombres completos, números de identificación y pasaportes) está estrictamente protegida bajo nuestras políticas de confidencialidad y cifrado de datos, utilizándose únicamente para la emisión de tus pases oficiales. En estricto cumplimiento con el Ministerio de Cultura de Perú y los operadores ferroviarios, los boletos de ingreso a Machu Picchu, Pisac, Ollantaytambo y los pasajes de tren son nominativos, intransferibles y estrictamente no reembolsables ni sujetos a cambios de fecha tras su compra. La agencia no se responsabiliza por variaciones en el itinerario causadas por factores climáticos extremos o bloqueos de vías ajenos a la operación."
+        }
       },
       "3": {
         "location": "CUSCO - AVENTURA",
@@ -127,9 +223,116 @@
         "level": "Intermedio",
         "price_from": "Desde",
         "price": 45,
-        "description": "Conquista la famosa cumbre andina de Vinicunca y sus impresionantes franjas de colores minerales. Una caminata inolvidable rodeada de paisajes alpinos y alpacas locales."
+        "description": "Conquista la famosa cumbre andina de Vinicunca y sus impresionantes franjas de colores minerales. Una caminata inolvidable rodeada de paisajes alpinos y alpacas locales.",
+        "departure-start": {
+          "title": "Punto de Inicio",
+          "description": "Recojo directo en la puerta de tu hotel en el centro histórico de Cusco (entre las 04:00 AM y 04:30 AM)."
+        },
+        "departure-end": {
+          "title": "Punto de Retorno",
+          "description": "Retorno al centro de la ciudad de Cusco, finalizando el traslado cerca de la Plaza de Armas (Plaza Regocijo o San Francisco) aproximadamente a las 04:30 PM."
+        },
+        "itinerary": {
+          "title": "Recorrido del Tour",
+          "description": [
+            "Tu aventura comenzará en la madrugada con el recojo en tu hotel en Cusco para iniciar un viaje en transporte turístico hacia el sur del Valle Sagrado. Tras un trayecto de aproximadamente dos horas por carretera, realizarás una parada en el poblado de Cusipata para disfrutar de un reconfortante desayuno buffet que te brindará las energías necesarias para la jornada. Posteriormente, continuarás en el bus por una hora más hasta llegar a Phulawasipata, el punto de inicio de la caminata ubicado a 4,600 metros sobre el nivel del mar. Tras recibir las instrucciones de nuestro guía certificado y tus bastones de trekking, iniciarás el ascenso a pie de aproximadamente una hora y media (según el ritmo físico) rodeado de imponentes paisajes andinos, picos nevados y rebaños de alpacas y llamas.",
+            "Al alcanzar la cumbre a 5,036 metros de altura, serás recompensado con la majestuosa vista de la Montaña de 7 Colores (Vinicunca) y el imponente nevado Ausangate. Tendrás tiempo suficiente para disfrutar del panorama, escuchar la explicación geológica del guía y capturar las fotografías más icónicas del viaje. Finalizada la visita, emprenderás el descenso de retorno hacia el punto de control de buses, un trayecto de una hora cuesta abajo. Abordarás nuevamente nuestro transporte para regresar a Cusipata, donde te esperará un merecido almuerzo buffet con opciones locales y vegetarianas. Finalmente, emprenderás el viaje de retorno a Cusco, concluyendo este día de alta montaña en el centro de la ciudad."
+          ]
+        },
+        "inclusions": {
+          "title": "Lo que incluye el tour",
+          "list": [
+            "Traslado en transporte turístico compartido desde Cusco hasta el punto de inicio de la caminata (ida y vuelta).",
+            "Servicio de guiado profesional bilingüe certificado (español / inglés) especializado en alta montaña.",
+            "01 desayuno buffet completo en el restaurante local de Cusipata.",
+            "01 almuerzo buffet con gastronomía local en Cusipata.",
+            "Bastones de trekking de madera para el apoyo durante la caminata.",
+            "Equipo de primeros auxilios y balón de oxígeno de emergencia a cargo del guía."
+          ]
+        },
+        "exclusions": {
+          "title": "Lo que NO incluye",
+          "list": [
+            "Ticket de ingreso oficial a la comunidad de Vinicunca (se paga en efectivo directamente en la ruta, aproximadamente S/. 25 a S/. 30 PEN).",
+            "Alquiler de caballos de emergencia provistos por los comuneros locales (costo aproximado de S/. 70 a S/. 90 PEN por tramo, sujeto a disponibilidad).",
+            "Agua, bebidas hidratantes, snacks o propinas para el equipo técnico.",
+            "Gastos personales de cualquier tipo durante el trayecto."
+          ]
+        },
+        "recommendations": {
+          "title": "¿Qué se recomienda llevar?",
+          "list": [
+            "Se recomienda encarecidamente contar con al menos 2 días previos de aclimatación en la ciudad de Cusco antes de realizar este tour, ya que la caminata supera los 5,000 metros de altitud.",
+            "Ropa de abrigo en capas (casaca térmica, guantes, chullo o gorro de lana), zapatillas de trekking con buen agarre (no calzado plano), poncho de lluvia, lentes de sol, bloqueador solar de alta protección y bálsamo labial.",
+            "Lleva dinero en efectivo en soles (monedas pequeñas) para los baños en la ruta e ingresos. Es recomendable llevar pastillas para el soroche (mal de altura), hojas de coca o caramelos de limón, y una botella de agua o bebida isotónica."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Políticas de Reserva y Cancelación",
+          "description": "Toda la información personal recolectada durante el proceso de reserva de esta actividad de aventura está protegida bajo nuestras estrictas políticas de confidencialidad y se maneja exclusivamente para la logística interna y la seguridad de los pasajeros. Debido a la naturaleza extrema del terreno y los factores climáticos impredecibles de la alta montaña andina, la agencia se reserva el derecho de modificar el itinerario o suspender la caminata si las condiciones meteorológicas ponen en riesgo la integridad física de los pasajeros. Los cupos y servicios de transporte son nominativos y no reembolsables ni transferibles en caso de inasistencia voluntaria (No Show) el día del tour."
+        }
+      },
+      "4": {
+        "location": "CUSCO - AVENTURA",
+        "title": "Full Day: Laguna Humantay",
+        "duration": "1 Día",
+        "level": "Intermedio",
+        "price_from": "Desde",
+        "price": 50,
+        "description": "Explora una de las lagunas glaciares más hermosas del Perú. Camina hacia los pies del imponente nevado Salkantay y descubre sus impresionantes aguas turquesas rodeadas de paisajes andinos espectaculares.",
+        "departure-start": {
+          "title": "Punto de Inicio",
+          "description": "Recojo directo en la puerta de tu hotel ubicado en el centro histórico de Cusco (entre las 04:00 AM y 04:30 AM)."
+        },
+        "departure-end": {
+          "title": "Punto de Retorno",
+          "description": "Retorno al centro de la ciudad de Cusco, finalizando el traslado en una plaza céntrica (Plaza Regocijo o San Francisco) aproximadamente a las 05:30 PM."
+        },
+        "itinerary": {
+          "title": "Recorrido del Tour",
+          "description": [
+            "Conquista la famosa cumbre andina de Soraypampa y sus impresionantes franjas de aguas turquesas minerales. Tu aventura comenzará muy temprano con el recojo en tu hotel en Cusco para iniciar un viaje en transporte turístico hacia el noroeste. Tras un trayecto de aproximadamente dos horas por carretera, realizarás una parada en el poblado de Mollepata para disfrutar de un reconfortante desayuno buffet que te brindará las energías necesarias para la jornada. Posteriormente, continuarás en el bus por una hora más hasta llegar a Soraypampa, el punto de inicio de la caminata. Tras recibir las instrucciones de nuestro guía certificado y tus bastones de trekking, iniciarás el ascenso a pie rodeado de imponentes paisajes alpinos y alpacas locales. Al alcanzar la cumbre, serás recompensado con la majestuosa vista de la Laguna Humantay y el imponente nevado Salkantay. Tendrás tiempo suficiente para disfrutar del panorama, escuchar la explicación mística y capturar fotografías. Finalizada la visita, emprenderás una caminata inolvidable de descenso de retorno hacia el punto de control de buses. Abordarás nuevamente nuestro transporte para regresar a Mollepata, donde te esperará un merecido almuerzo buffet. Finalmente, emprenderás el viaje de retorno a Cusco, concluyendo este día de aventura en el centro de la ciudad."
+          ]
+        },
+        "inclusions": {
+          "title": "Lo que incluye el tour",
+          "list": [
+            "Traslado en transporte turístico compartido desde Cusco hasta el punto de inicio en Soraypampa (ida y vuelta).",
+            "Servicio de guiado profesional bilingüe certificado (español / inglés) especializado en rutas de trekking.",
+            "01 desayuno buffet completo en el restaurante local de Mollepata.",
+            "01 almuerzo buffet con gastronomía local en Mollepata.",
+            "Bastones de trekking de madera para el soporte durante el ascenso.",
+            "Equipo de primeros auxilios y balón de oxígeno de emergencia a cargo del guía líder."
+          ]
+        },
+        "exclusions": {
+          "title": "Lo que NO incluye",
+          "list": [
+            "Ticket de ingreso oficial a la comunidad de Mollepata / Humantay (se paga en efectivo directamente en la ruta, aproximadamente S/. 20 PEN).",
+            "Alquiler de caballos de emergencia provistos por los arrieros locales (costo aproximado de S/. 80 PEN por tramo, según disponibilidad).",
+            "Agua, bebidas hidratantes, snacks o propinas para el equipo técnico de la agencia.",
+            "Gastos personales de cualquier tipo durante el trayecto."
+          ]
+        },
+        "recommendations": {
+          "title": "¿Qué se recomienda llevar?",
+          "list": [
+            "Se recomienda contar con al menos 2 días previos de aclimatación en la ciudad de Cusco antes de realizar este tour, ya que la laguna se encuentra a 4,200 metros de altitud.",
+            "Ropa de abrigo en capas (casaca cortavientos, guantes, gorro para el frío), zapatillas de trekking con buen agarre (evitar calzado plano o liso), poncho de lluvia, lentes de sol, bloqueador solar de alta protección y bálsamo labial.",
+            "Lleva dinero en efectivo en soles (monedas pequeñas) para los servicios higiénicos en la ruta. Es recomendable consumir pastillas para el soroche o caramelos de coca antes de iniciar el trekking."
+          ]
+        },
+        "privacy-policy": {
+          "title": "Políticas de Reserva y Cancelación",
+          "description": "Toda la información personal recolectada durante el proceso de reserva de esta actividad de aventura está protegida bajo nuestras estrictas políticas de confidencialidad y se maneja exclusivamente para la logística interna y la seguridad de los pasajeros. Debido a la naturaleza del terreno y los factores climáticos impredecibles de la alta montaña andina, la agencia se reserva el derecho de modificar el itinerario o suspender la caminata si las condiciones meteorológicas ponen en riesgo la integridad física de los pasajeros. Los cupos y servicios de transporte son nominativos y no reembolsables ni transferibles en caso de inasistencia voluntaria (No Show) el día del tour."
+        }
       }
     }
+  },
+  "abouts-us": {
+    "title": "¿Quiénes Somos?",
+    "description": "Somos una organización especializada en servicios turísticos; Nuestros tours cubren principalmente Cusco y el sur de Perú. Somos una agencia de viajes de aventura apasionados por la riqueza cultural y natural del Perú, especializados en crear experiencias únicas en Cusco y Machu Picchu. Nos enfocamos en brindar un servicio personalizado que combina aventura, historia y confort.",
+    "slogan": "Nuestro compromiso es ofrecer a nuestros viajeros una experiencia auténtica y memorable a la vez que apoyamos el turismo responsable y sostenible."
   },
   "quote-my-trip": {
     "title": "Diseñamos el viaje ",
