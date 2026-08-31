@@ -21,7 +21,7 @@ export function Hero() {
           </h1>
         </div>
         <div className='animate-fade-in-left'>
-          <span className='font-georgia text-4xl leading-11 lg:text-5xl lg:leading-14'>
+          <span className='text-4xl leading-11 lg:text-5xl lg:leading-14'>
             {t('hero.subtitle')}
           </span>
         </div>

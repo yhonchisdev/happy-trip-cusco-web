@@ -5,7 +5,7 @@ import { cn } from '@/utils'
 const reviews = [1, 2, 3, 4, 5, 6] as const
 const scores = Array.from({ length: 5 }, (_, index) => index + 1)
 
-export function Reviews() {
+export function StoriesThatInspire() {
   const { t } = useTranslation()
 
   return (
@@ -15,19 +15,19 @@ export function Reviews() {
           <div className='flex items-center gap-2'>
             <div className='bg-simple-green h-0.5 w-8' />
             <span className='text-simple-green text-[10px] leading-3 font-bold tracking-[4px]'>
-              {t('reviews.badge')}
+              {t('stories-that-inspire.badge')}
             </span>
           </div>
         </div>
         <div className='flex flex-col'>
           <div className='timeline-view animate-fade-in-right animate-range-[entry_5%_contain_20%]'>
-            <h1 className='text-5xl leading-14 font-light lg:text-6xl lg:leading-17'>
-              {t('reviews.title')}
+            <h1 className='text-5xl leading-14 font-bold lg:text-6xl lg:leading-17'>
+              {t('stories-that-inspire.title')}
             </h1>
           </div>
           <div className='timeline-view animate-fade-in-left animate-range-[entry_5%_contain_20%]'>
-            <span className='font-georgia text-xanadu text-5xl leading-14 lg:text-6xl lg:leading-17'>
-              {t('reviews.subtitle')}
+            <span className='text-xanadu text-5xl leading-14 font-light lg:text-6xl lg:leading-17'>
+              {t('stories-that-inspire.subtitle')}
             </span>
           </div>
         </div>
@@ -48,14 +48,15 @@ export function Reviews() {
                           key={score}
                           className={cn('text-sea-glass size-5', {
                             'text-australia-green':
-                              score <= t(`review.${review}.rating`),
+                              score <=
+                              t(`stories-that-inspire.review.${review}.rating`),
                           })}
                         />
                       )
                     })}
                   </div>
                   <span className='text-lunar-green text-base leading-6'>
-                    {t(`review.${review}.description`)}
+                    {t(`stories-that-inspire.review.${review}.description`)}
                   </span>
                   <div className='flex items-center gap-4'>
                     <div
@@ -70,14 +71,18 @@ export function Reviews() {
                         ][review % reviews.length],
                       )}
                     >
-                      {t(`review.${review}.user.name`).charAt(0)}
+                      {t(
+                        `stories-that-inspire.review.${review}.user.name`,
+                      ).charAt(0)}
                     </div>
                     <div className='flex flex-col'>
                       <span className='text-base leading-6 font-bold'>
-                        {t(`review.${review}.user.name`)}
+                        {t(`stories-that-inspire.review.${review}.user.name`)}
                       </span>
                       <span className='text-lunar-green text-sm leading-4.5'>
-                        {t(`review.${review}.user.location`)}
+                        {t(
+                          `stories-that-inspire.review.${review}.user.location`,
+                        )}
                       </span>
                     </div>
                   </div>

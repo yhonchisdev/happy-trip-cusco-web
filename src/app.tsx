@@ -4,10 +4,11 @@ import { Header } from './components/header'
 import { Section } from './components/section'
 import { Hero } from './components/hero'
 import { TravelTicket } from './components/travel-ticket'
-import { Reviews } from './components/reviews'
+import { StoriesThatInspire } from './components/stories-that-inspire'
 import { WhyChooseUs } from './components/why-choose-us'
 import { TicketSupport } from './components/ticket-support'
 import { Faqs } from './components/faqs'
+import { Footer } from './components/footer'
 
 export function App() {
   const { t, i18n } = useTranslation()
@@ -32,7 +33,7 @@ export function App() {
         <WhyChooseUs />
       </Section>
       <Section>
-        <Reviews />
+        <StoriesThatInspire />
       </Section>
       <Section>
         <TicketSupport />
@@ -40,6 +41,7 @@ export function App() {
       <Section>
         <Faqs />
       </Section>
+      <Footer />
     </Fragment>
   )
 }

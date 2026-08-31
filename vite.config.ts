@@ -9,23 +9,16 @@ import svgr from 'vite-plugin-svgr'
 const customFonts: CustomFonts = {
   families: [
     {
-      name: 'TripSans-VF',
-      src: './src/assets/fonts/TripSans-VF.woff2',
+      name: 'Happy-VF',
+      src: './src/assets/fonts/Happy-VF.woff2',
       fallback: {
-        fallbacks: ['Trip Sans', 'arial', 'sans-serif'],
+        fallbacks: ['arial', 'sans-serif'],
       },
       transform(font) {
-        if (font.basename === 'TripSans-VF') {
+        if (font.basename === 'Happy-VF') {
           font.weight = '100 900'
         }
         return font
-      },
-    },
-    {
-      name: 'Georgia',
-      src: './src/assets/fonts/Georgia.woff2',
-      fallback: {
-        fallbacks: ['Times New Roman', 'Century Schoolbook L', 'serif'],
       },
     },
   ],

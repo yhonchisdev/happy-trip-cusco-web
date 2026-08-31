@@ -66,47 +66,53 @@ export function WhyChooseUs() {
                             },
                           )}
                         >
-                          <div
-                            className={cn(
-                              'bg-xanadu flex items-center justify-center rounded-full px-2.5 py-1.5',
-                              {
-                                'gap-0.75 rounded-lg bg-white py-1.75':
-                                  step === 'choose-your-own-pace',
-                              },
-                            )}
-                          >
-                            <span
+                          <div className='timeline-view animate-heartbeat animate-range-[entry_5%_contain_20%]'>
+                            <div
                               className={cn(
-                                'text-[10px] leading-3 font-extrabold text-white',
+                                'bg-xanadu flex items-center justify-center rounded-full px-2.5 py-1.5',
                                 {
-                                  'text-english-holly text-xs leading-4':
+                                  'gap-0.75 rounded-lg bg-white py-1.75':
                                     step === 'choose-your-own-pace',
                                 },
                               )}
                             >
-                              {t(`why-choose-us.${step}.badge`)}
-                            </span>
-                            {step === 'choose-your-own-pace' && (
-                              <Icons.ArrowUp className='text-malachite size-4' />
-                            )}
+                              <span
+                                className={cn(
+                                  'text-[10px] leading-3 font-extrabold text-white',
+                                  {
+                                    'text-english-holly text-xs leading-4':
+                                      step === 'choose-your-own-pace',
+                                  },
+                                )}
+                              >
+                                {t(`why-choose-us.${step}.badge`)}
+                              </span>
+                              {step === 'choose-your-own-pace' && (
+                                <Icons.ArrowUp className='text-malachite size-4' />
+                              )}
+                            </div>
                           </div>
                         </div>
                       )}
                       {step === 'discover-exclusive-routes' && (
                         <div className='absolute -right-5.25 bottom-7 rotate-6'>
-                          <div className='flex items-center gap-0.75 rounded-lg bg-white px-2 py-1'>
-                            <span className='text-xs leading-4 font-extrabold'>
-                              5
-                            </span>
-                            <Icons.Star className='text-australia-green size-2.5' />
+                          <div className='timeline-view animate-heartbeat animate-range-[entry_5%_contain_20%]'>
+                            <div className='flex items-center gap-0.75 rounded-lg bg-white px-2 py-1'>
+                              <span className='text-xs leading-4 font-extrabold'>
+                                5
+                              </span>
+                              <Icons.Star className='text-australia-green size-2.5' />
+                            </div>
                           </div>
                         </div>
                       )}
                       {step === 'enjoy-stress-free' && (
                         <div className='absolute top-23.75 -right-5 rotate-17'>
-                          <div className='relative flex items-center justify-center'>
-                            <Icons.Coupon className='text-malachite h-9.5 w-15.75' />
-                            <Icons.Check className='absolute size-6 text-white' />
+                          <div className='timeline-view animate-heartbeat animate-range-[entry_5%_contain_20%]'>
+                            <div className='relative flex items-center justify-center'>
+                              <Icons.Coupon className='text-malachite h-9.5 w-15.75' />
+                              <Icons.Check className='absolute size-6 text-white' />
+                            </div>
                           </div>
                         </div>
                       )}

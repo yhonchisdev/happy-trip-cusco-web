@@ -23,59 +23,59 @@
     "excursion": "excursión",
     "destination": "destino"
   },
-  "reviews": {
+  "stories-that-inspire": {
     "badge": "VIAJERO EXPERTO",
     "title": "Historias que",
-    "subtitle": "inspiran."
-  },
-  "review": {
-    "1": {
-      "rating": 5,
-      "user": {
-        "name": "Marian Godoy",
-        "location": "España"
+    "subtitle": "inspiran.",
+    "review": {
+      "1": {
+        "rating": 5,
+        "user": {
+          "name": "Marian Godoy",
+          "location": "España"
+        },
+        "description": "Ha sido una experiencia increíble que superó con creces nuestras expectativas, una pasada, que no te esperas por el precio tan insignificante que tiene , nuestro guía Pika fue súper amable y nos ayudó en todo y explicó todo. Una experiencia inolvidable"
       },
-      "description": "Ha sido una experiencia increíble que superó con creces nuestras expectativas, una pasada, que no te esperas por el precio tan insignificante que tiene , nuestro guía Pika fue súper amable y nos ayudó en todo y explicó todo. Una experiencia inolvidable"
-    },
-    "2": {
-      "rating": 5,
-      "user": {
-        "name": "Lee Chiar",
-        "location": "Malasia"
+      "2": {
+        "rating": 5,
+        "user": {
+          "name": "Lee Chiar",
+          "location": "Malasia"
+        },
+        "description": "Una experiencia con una excelente relación calidad-precio, algo que recomendaría a todo el mundo. IMPRESCINDIBLE cuando estés en Marrakech. Medo, nuestro guía, fue muy amable y atento. Sigue comunicándose con nosotros, aunque al principio hubo pequeños contratiempos en términos de transporte, pero pensamos que se gestionó bien."
       },
-      "description": "Una experiencia con una excelente relación calidad-precio, algo que recomendaría a todo el mundo. IMPRESCINDIBLE cuando estés en Marrakech. Medo, nuestro guía, fue muy amable y atento. Sigue comunicándose con nosotros, aunque al principio hubo pequeños contratiempos en términos de transporte, pero pensamos que se gestionó bien."
-    },
-    "3": {
-      "rating": 5,
-      "user": {
-        "name": "Georgia",
-        "location": "Reino Unido"
+      "3": {
+        "rating": 5,
+        "user": {
+          "name": "Georgia",
+          "location": "Reino Unido"
+        },
+        "description": "¡Un día estupendo! Al principio me preocupaba tener que ir con prisas para meter todas las actividades a lo largo del día, pero no fue así y todo salió bien. La comida también estaba deliciosa."
       },
-      "description": "¡Un día estupendo! Al principio me preocupaba tener que ir con prisas para meter todas las actividades a lo largo del día, pero no fue así y todo salió bien. La comida también estaba deliciosa."
-    },
-    "4": {
-      "rating": 4,
-      "user": {
-        "name": "Renee",
-        "location": "Canadá"
+      "4": {
+        "rating": 4,
+        "user": {
+          "name": "Renee",
+          "location": "Canadá"
+        },
+        "description": "Este fue un paquete estupendo. ¡Nuestro guía, Abderrahim, fue genial! Era un experto, respondió a todas mis preguntas y se aseguró de que todos lo pasáramos genial... Me encantó la experiencia"
       },
-      "description": "Este fue un paquete estupendo. ¡Nuestro guía, Abderrahim, fue genial! Era un experto, respondió a todas mis preguntas y se aseguró de que todos lo pasáramos genial... Me encantó la experiencia"
-    },
-    "5": {
-      "rating": 4,
-      "user": {
-        "name": "Kévin",
-        "location": "Francia"
+      "5": {
+        "rating": 4,
+        "user": {
+          "name": "Kévin",
+          "location": "Francia"
+        },
+        "description": "Una excursión de 1 día genial, todos los servicios fueron excelentes, tuvimos tiempo para cada actividad con pausas y tiempo para poder hablar con nuestro grupo. Pika, nuestra guía, ha sido estupenda con nosotros, atenta y paciente. ¡Un día muy bien aprovechado, lo recomendamos!"
       },
-      "description": "Una excursión de 1 día genial, todos los servicios fueron excelentes, tuvimos tiempo para cada actividad con pausas y tiempo para poder hablar con nuestro grupo. Pika, nuestra guía, ha sido estupenda con nosotros, atenta y paciente. ¡Un día muy bien aprovechado, lo recomendamos!"
-    },
-    "6": {
-      "rating": 4,
-      "user": {
-        "name": "Evandro",
-        "location": "Portugal"
-      },
-      "description": "Pika fue muy atenta y cariñosa y nos hizo sentir seguros y como en casa. ¡Disfrutamos mucho de nuestro día y sin duda volveríamos! No podría recomendarla más. Gracias, Pika."
+      "6": {
+        "rating": 4,
+        "user": {
+          "name": "Evandro",
+          "location": "Portugal"
+        },
+        "description": "Pika fue muy atenta y cariñosa y nos hizo sentir seguros y como en casa. ¡Disfrutamos mucho de nuestro día y sin duda volveríamos! No podría recomendarla más. Gracias, Pika."
+      }
     }
   },
   "why-choose-us": {
@@ -130,6 +130,15 @@
         "question": "¿Qué tipo de asistencia ofrecen durante el viaje?",
         "answer": "Cuentas con soporte de emergencia las 24 horas del día, los 7 días de la semana. Te daremos un número de contacto exclusivo para resolver cualquier imprevisto de inmediato."
       }
+    }
+  },
+  "footer": {
+    "author": "© 2026 Happy trip cusco S.A.C. Todos los derechos reservados.",
+    "about": "Transformamos tus ideas en el viaje de tus sueños sin el estrés de la planificación. Conectamos a viajeros con aventuras auténticas, guías locales y un soporte continuo.",
+    "links": {
+      "address": "Cómo llegar",
+      "phone": "Consultar disponibilidad",
+      "email": "Hacer una pregunta"
     }
   }
 }

@@ -2,8 +2,7 @@
 @import 'tailwind-animations';
 
 @theme {
-  --font-trip-sans-vf: 'TripSans-VF';
-  --font-georgia: 'Georgia';
+  --font-happy-vf: 'Happy-VF';
 
   --color-white: #ffffff;
   --color-english-holly: #002b11;
@@ -22,4 +21,17 @@
   --spacing-slide-review-md: calc((100% + 16px * 2) * 0.91667 - 16px);
   --spacing-slide-feature-lg: calc((100% + 24px * 2) * 0.41667 - 24px);
   --spacing-slide-feature-md: calc((100% + 24px * 2) * 0.91667 - 24px);
+
+  --areas-footer: 'legal legal legal legal social social';
+
+  --area-legal: legal;
+  --area-social: social;
+}
+
+@utility grid-areas-* {
+  grid-template-areas: --value(--areas-*);
+}
+
+@utility grid-area-* {
+  grid-area: --value(--area-*);
 }
