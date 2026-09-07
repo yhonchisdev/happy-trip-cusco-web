@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'use-intl'
 import { Icons } from '@/icons/icon'
 import { cn } from '@/utils'
 import getaway from '@/assets/images/travel-ticket/getaway.jpg'
@@ -8,23 +8,24 @@ import excursion from '@/assets/images/travel-ticket/excursion.jpg'
 import destination from '@/assets/images/travel-ticket/destination.jpg'
 
 const stars = Array.from({ length: 5 }, (_, index) => index + 1)
+const photos = [getaway, itinerary, excursion, destination] as const
 
 export function TravelTicket() {
-  const { t } = useTranslation()
+  const t = useTranslations('Service')
   const [current, setCurrent] = useState<number>(0)
 
   const steps = [
-    t('services.getaway'),
-    t('services.itinerary'),
-    t('services.excursion'),
-    t('services.destination'),
+    t('steps.getaway'),
+    t('steps.itinerary'),
+    t('steps.excursion'),
+    t('steps.destination'),
   ]
-  const photos = [getaway, itinerary, excursion, destination]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % steps.length)
     }, 2500)
+
     return () => clearInterval(interval)
   }, [steps.length])
 
@@ -61,7 +62,7 @@ export function TravelTicket() {
           </div>
           <div className='absolute top-73 right-6 left-6 flex gap-1.75 overflow-hidden lg:top-100 lg:right-8 lg:left-8'>
             <span className='text-xl leading-6 font-black lg:text-2xl lg:leading-7'>
-              {t('services.label')}
+              {t('title')}
             </span>
             <div className='flex flex-col'>
               {steps.map((step, index) => {

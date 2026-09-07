@@ -1,8 +1,8 @@
+import { useTranslations } from 'use-intl'
 import { Icons } from '@/icons/icon'
-import { useTranslation } from 'react-i18next'
 
 export function AboutUs() {
-  const { t } = useTranslation()
+  const t = useTranslations('AboutUs')
 
   return (
     <div className='mx-auto flex max-w-200 flex-1 flex-col items-center gap-4 py-10'>
@@ -14,19 +14,19 @@ export function AboutUs() {
           <div className='bg-simple-green h-0.5 w-8' />
           <div className='flex-1'>
             <span className='text-xanadu text-xs leading-4 font-bold tracking-[4px]'>
-              {t('abouts-us.slogan')}
+              {t('slogan')}
             </span>
           </div>
         </div>
       </div>
       <div className='timeline-view animate-fade-in-down animate-range-[entry_5%_contain_20%]'>
         <h1 className='text-4xl leading-11 font-bold lg:text-5xl lg:leading-14'>
-          {t('abouts-us.title')}
+          {t('title')}
         </h1>
       </div>
       <div className='timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
         <span className='text-lunar-green text-sm leading-4.5'>
-          {t('abouts-us.description')}
+          {t('description')}
         </span>
       </div>
     </div>

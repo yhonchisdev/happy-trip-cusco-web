@@ -1,5 +1,5 @@
 import { Fragment, useLayoutEffect } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useLocale, useTranslations } from 'use-intl'
 import { Header } from './components/header'
 import { Section } from './components/section'
 import { Hero } from './components/hero'
@@ -13,17 +13,18 @@ import { FrequentlyAskedQuestions } from './components/frequently-asked-question
 import { Footer } from './components/footer'
 
 export function App() {
-  const { t, i18n } = useTranslation()
+  const locale = useLocale()
+  const t = useTranslations('Seo')
 
   useLayoutEffect(() => {
-    document.documentElement.lang = i18n.language
-  }, [i18n.language])
+    document.documentElement.lang = locale
+  }, [locale])
 
   return (
     <Fragment>
-      <title>{t('seo.title')}</title>
-      <meta name='description' content={t('seo.description')} />
-      <meta name='keywords' content={t('seo.keywords')} />
+      <title>{t('title')}</title>
+      <meta name='description' content={t('description')} />
+      <meta name='keywords' content={t('keywords')} />
       <Header />
       <Section>
         <div className='flex flex-col-reverse items-center justify-between gap-6 py-8 lg:flex-row'>

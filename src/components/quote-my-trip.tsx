@@ -1,17 +1,15 @@
+import { useTranslations } from 'use-intl'
 import { Icons } from '@/icons/icon'
-import { useTranslation } from 'react-i18next'
 import { Button } from './button'
 
 const stars = Array.from({ length: 5 }, (_, index) => index + 1)
 const steps = [1, 2, 3] as const
 
 export function QuoteMyTrip() {
-  const { t } = useTranslation()
+  const t = useTranslations('QuoteMyTrip')
 
   const handleQuote = () => {
-    const encodedMessage = encodeURIComponent(
-      t('quote-my-trip.whatsapp-message'),
-    )
+    const encodedMessage = encodeURIComponent(t('whatsapp-message'))
     const whatsappUrl = `https://wa.me/+51945054242?text=${encodedMessage}`
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
   }
@@ -44,25 +42,25 @@ export function QuoteMyTrip() {
                 <div className='flex flex-col'>
                   <div className='timeline-view animate-fade-in-left animate-range-[entry_5%_contain_20%]'>
                     <span className='text-[36px] leading-10 font-black text-white md:text-[48px] md:leading-14'>
-                      {t('quote-my-trip.title')}
+                      {t('title')}
                     </span>
                   </div>
                   <div className='timeline-view animate-fade-in-right animate-range-[entry_5%_contain_20%]'>
                     <span className='text-[36px] leading-10 font-black md:text-[48px] md:leading-14'>
-                      {t('quote-my-trip.subtitle')}
+                      {t('subtitle')}
                     </span>
                   </div>
                 </div>
                 <div className='timeline-view animate-fade-in-down animate-range-[entry_5%_contain_20%]'>
                   <span className='text-lunar-green text-base leading-6'>
-                    {t('quote-my-trip.description')}
+                    {t('description')}
                   </span>
                 </div>
               </div>
               <div className='timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
                 <div className='w-full drop-shadow-lg lg:w-fit'>
                   <Button variant='third' onClick={handleQuote}>
-                    {t('quote-my-trip.button-label')}
+                    {t('button-label')}
                   </Button>
                 </div>
               </div>
@@ -89,7 +87,7 @@ export function QuoteMyTrip() {
                       </div>
                       <div className='flex-1'>
                         <span className='text-base leading-6 font-bold text-white md:text-xl md:leading-7.5'>
-                          {t(`quote-my-trip.steps.${step}`)}
+                          {t(`steps.${step}`)}
                         </span>
                       </div>
                     </div>

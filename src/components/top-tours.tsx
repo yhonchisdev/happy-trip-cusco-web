@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'use-intl'
 import { Icons } from '@/icons/icon'
 import machuPicchuFullDay from '@/assets/images/tours/machu-picchu-full-day.jpg'
 import sacredValleMachuPicchu from '@/assets/images/tours/sacred-valley-machu-picchu.jpg'
@@ -20,15 +20,17 @@ const photo: Record<Tour, string> = {
 }
 
 export function TopTours() {
-  const { t } = useTranslation()
+  const t = useTranslations('TopTours')
   const [tour, setTour] = useState<Tour | null>(null)
 
   useEffect(() => {
     if (tour !== null) {
       document.body.classList.add('overflow-hidden', 'touch-none')
     }
+
     return () => {
       const dialogs = document.querySelectorAll('[role="dialog"]')
+
       if (dialogs.length === 0) {
         document.body.classList.remove('overflow-hidden', 'touch-none')
       }
@@ -46,10 +48,10 @@ export function TopTours() {
   const handleBook = () => {
     if (!tour) return
     const encodedMessage = encodeURIComponent(
-      t('top-tours.whatsapp-message', {
-        name: t(`top-tours.tours.${tour}.title`),
-        duration: t(`top-tours.tours.${tour}.duration`),
-        price: `$${t(`top-tours.tours.${tour}.price`)} USD`,
+      t('whatsapp-message', {
+        name: t(`tours.${tour}.title`),
+        duration: t(`tours.${tour}.duration`),
+        price: t(`tours.${tour}.price`),
       }),
     )
     const whatsappUrl = `https://wa.me/+51945054242?text=${encodedMessage}`
@@ -63,18 +65,18 @@ export function TopTours() {
           <div className='flex items-center gap-2'>
             <div className='bg-simple-green h-0.5 w-8' />
             <span className='text-simple-green text-[10px] leading-3 font-bold tracking-[4px]'>
-              {t('top-tours.badge')}
+              {t('badge')}
             </span>
           </div>
         </div>
         <div className='timeline-view animate-fade-in-left animate-range-[entry_5%_contain_20%]'>
           <h1 className='text-4xl leading-11 font-bold lg:text-5xl lg:leading-14'>
-            {t('top-tours.title')}
+            {t('title')}
           </h1>
         </div>
         <div className='timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
           <span className='text-xanadu text-sm leading-4.5'>
-            {t('top-tours.description')}
+            {t('description')}
           </span>
         </div>
       </div>
@@ -91,14 +93,14 @@ export function TopTours() {
                     <img
                       className='size-full object-cover'
                       src={photo[tour]}
-                      alt={t(`top-tours.tours.${tour}.title`)}
+                      alt={t(`tours.${tour}.title`)}
                       loading='lazy'
                     />
                     <div className='absolute top-4 left-4'>
                       <div className='flex items-center gap-1 rounded-full bg-white px-2 py-1'>
                         <Icons.Clock className='text-malachite size-4' />
                         <span className='text-sm leading-4.5 font-bold'>
-                          {t(`top-tours.tours.${tour}.duration`)}
+                          {t(`tours.${tour}.duration`)}
                         </span>
                       </div>
                     </div>
@@ -106,7 +108,7 @@ export function TopTours() {
                       <div className='bg-english-holly/50 flex items-center gap-1 rounded-full px-2 py-1 text-white backdrop-blur-md'>
                         <div className='bg-malachite size-2 rounded-full' />
                         <span className='text-xs leading-4 font-bold'>
-                          {t(`top-tours.tours.${tour}.level`)}
+                          {t(`tours.${tour}.level`)}
                         </span>
                       </div>
                     </div>
@@ -115,27 +117,27 @@ export function TopTours() {
                     <div className='flex items-center gap-1'>
                       <Icons.Location className='text-malachite size-4' />
                       <span className='text-xanadu text-xs leading-4 font-bold'>
-                        {t(`top-tours.tours.${tour}.location`)}
+                        {t(`tours.${tour}.location`)}
                       </span>
                     </div>
                     <span className='text-lg leading-6 font-bold'>
-                      {t(`top-tours.tours.${tour}.title`)}
+                      {t(`tours.${tour}.title`)}
                     </span>
                     <span className='text-lunar-green line-clamp-2 text-sm leading-4.5'>
-                      {t(`top-tours.tours.${tour}.description`)}
+                      {t(`tours.${tour}.description`)}
                     </span>
                   </div>
                   <div className='flex items-center justify-between gap-4'>
                     <div className='flex flex-col gap-1'>
                       <span className='text-xanadu text-xs leading-4 font-bold'>
-                        {t(`top-tours.tours.${tour}.price_from`)}
+                        {t(`tours.${tour}.price_from`)}
                       </span>
                       <div className='flex items-baseline gap-1'>
                         <span className='text-malachite text-sm leading-4.5 font-bold'>
                           $
                         </span>
                         <span className='text-lg leading-6 font-bold'>
-                          {t(`top-tours.tours.${tour}.price`)}
+                          {t(`tours.${tour}.price`)}
                         </span>
                       </div>
                     </div>
@@ -144,7 +146,7 @@ export function TopTours() {
                       className='bg-english-holly cursor-pointer rounded-full px-3 py-1.5 text-white transition-all duration-200 hover:opacity-80 active:opacity-70'
                     >
                       <span className='text-sm leading-4.5 font-bold'>
-                        {t('top-tours.view-label')}
+                        {t('view-label')}
                       </span>
                     </button>
                   </div>
@@ -168,19 +170,19 @@ export function TopTours() {
               <div className='flex items-center justify-between gap-4 p-6 md:px-12'>
                 <div className='flex flex-col gap-1'>
                   <span className='text-xl leading-7 font-extrabold'>
-                    {t(`top-tours.tours.${tour}.title`)}
+                    {t(`tours.${tour}.title`)}
                   </span>
                   <div className='flex flex-wrap gap-4'>
                     <div className='border-sea-glass flex items-center gap-1 rounded-full border bg-white px-2 py-1'>
                       <Icons.Clock className='text-malachite size-4' />
                       <span className='text-sm leading-4.5 font-bold'>
-                        {t(`top-tours.tours.${tour}.duration`)}
+                        {t(`tours.${tour}.duration`)}
                       </span>
                     </div>
                     <div className='bg-english-holly/50 flex items-center gap-1 rounded-full px-2 py-1 text-white backdrop-blur-md'>
                       <div className='bg-malachite size-2 rounded-full' />
                       <span className='text-xs leading-4 font-bold'>
-                        {t(`top-tours.tours.${tour}.level`)}
+                        {t(`tours.${tour}.level`)}
                       </span>
                     </div>
                   </div>
@@ -197,135 +199,91 @@ export function TopTours() {
                   <img
                     className='size-full object-cover'
                     src={photo[tour]}
-                    alt={t(`top-tours.tours.${tour}.title`)}
+                    alt={t(`tours.${tour}.title`)}
                     loading='lazy'
                   />
                 </div>
                 <div className='flex items-center gap-1'>
                   <Icons.Location className='text-malachite size-4' />
                   <span className='text-xanadu text-xs leading-4 font-bold'>
-                    {t(`top-tours.tours.${tour}.location`)}
+                    {t(`tours.${tour}.location`)}
                   </span>
                 </div>
                 <div className='flex flex-col gap-2'>
                   <div className='flex flex-col gap-1'>
                     <span className='text-base leading-6 font-bold'>
-                      {t(`top-tours.tours.${tour}.departure-start.title`)}
+                      {t(`tours.${tour}.departure-start.title`)}
                     </span>
                     <span className='text-lunar-green text-sm leading-4.5'>
-                      {t(`top-tours.tours.${tour}.departure-start.description`)}
+                      {t(`tours.${tour}.departure-start.description`)}
                     </span>
                   </div>
                   <div className='flex flex-col gap-0.5'>
                     <span className='text-base leading-6 font-bold'>
-                      {t(`top-tours.tours.${tour}.departure-end.title`)}
+                      {t(`tours.${tour}.departure-end.title`)}
                     </span>
                     <span className='text-lunar-green text-sm leading-4.5'>
-                      {t(`top-tours.tours.${tour}.departure-end.description`)}
+                      {t(`tours.${tour}.departure-end.description`)}
                     </span>
                   </div>
                 </div>
                 <div className='flex flex-col gap-2'>
                   <span className='text-base leading-6 font-bold'>
-                    {t(`top-tours.tours.${tour}.itinerary.title`)}
+                    {t(`tours.${tour}.itinerary.title`)}
                   </span>
                   <div className='flex flex-col gap-1'>
-                    {t(`top-tours.tours.${tour}.itinerary.description`, {
-                      returnObjects: true,
-                    }).map((item) => {
-                      return (
-                        <span
-                          key={item}
-                          className='text-lunar-green text-sm leading-4.5'
-                        >
-                          {item}
-                        </span>
-                      )
-                    })}
+                    {t(`tours.${tour}.itinerary.description`)}
                   </div>
                 </div>
                 <div className='flex flex-col gap-2'>
                   <span className='text-base leading-6 font-bold'>
-                    {t(`top-tours.tours.${tour}.inclusions.title`)}
-                  </span>
-                  <div className='flex flex-col gap-1'>
-                    {t(`top-tours.tours.${tour}.inclusions.list`, {
-                      returnObjects: true,
-                    }).map((item) => {
-                      return (
-                        <span
-                          key={item}
-                          className='text-lunar-green text-sm leading-4.5'
-                        >
-                          • {item}
-                        </span>
-                      )
-                    })}
-                  </div>
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <span className='text-base leading-6 font-bold'>
-                    {t(`top-tours.tours.${tour}.exclusions.title`)}
-                  </span>
-                  <div className='flex flex-col gap-1'>
-                    {t(`top-tours.tours.${tour}.exclusions.list`, {
-                      returnObjects: true,
-                    }).map((item) => {
-                      return (
-                        <span
-                          key={item}
-                          className='text-lunar-green text-sm leading-4.5'
-                        >
-                          • {item}
-                        </span>
-                      )
-                    })}
-                  </div>
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <span className='text-base leading-6 font-bold'>
-                    {t(`top-tours.tours.${tour}.recommendations.title`)}
-                  </span>
-                  <div className='flex flex-col gap-1'>
-                    {t(`top-tours.tours.${tour}.recommendations.list`, {
-                      returnObjects: true,
-                    }).map((item) => {
-                      return (
-                        <span
-                          key={item}
-                          className='text-lunar-green text-sm leading-4.5'
-                        >
-                          • {item}
-                        </span>
-                      )
-                    })}
-                  </div>
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <span className='text-base leading-6 font-bold'>
-                    {t(`top-tours.tours.${tour}.privacy-policy.title`)}
+                    {t(`tours.${tour}.inclusions.title`)}
                   </span>
                   <span className='text-lunar-green text-sm leading-4.5'>
-                    {t(`top-tours.tours.${tour}.privacy-policy.description`)}
+                    {t(`tours.${tour}.inclusions.description`)}
+                  </span>
+                </div>
+                <div className='flex flex-col gap-2'>
+                  <span className='text-base leading-6 font-bold'>
+                    {t(`tours.${tour}.exclusions.title`)}
+                  </span>
+                  <span className='text-lunar-green text-sm leading-4.5'>
+                    {t(`tours.${tour}.exclusions.description`)}
+                  </span>
+                </div>
+                <div className='flex flex-col gap-2'>
+                  <span className='text-base leading-6 font-bold'>
+                    {t(`tours.${tour}.recommendations.title`)}
+                  </span>
+                  <span className='text-lunar-green text-sm leading-4.5'>
+                    {t(`tours.${tour}.recommendations.description`)}
+                  </span>
+                </div>
+                <div className='flex flex-col gap-2'>
+                  <span className='text-base leading-6 font-bold'>
+                    {t(`tours.${tour}.privacy-policy.title`)}
+                  </span>
+                  <span className='text-lunar-green text-sm leading-4.5'>
+                    {t(`tours.${tour}.privacy-policy.description`)}
                   </span>
                 </div>
               </div>
               <div className='border-t-sea-glass shadow-modal-footer flex justify-between gap-4 border-t p-6 md:px-12'>
                 <div className='flex flex-col gap-1'>
                   <span className='text-xanadu text-sm leading-4.5 font-bold'>
-                    {t(`top-tours.tours.${tour}.price_from`)}
+                    {t(`tours.${tour}.price_from`)}
                   </span>
                   <div className='flex items-baseline gap-1'>
                     <span className='text-malachite text-base leading-6 font-bold'>
                       $
                     </span>
                     <span className='text-xl leading-7 font-bold'>
-                      {t(`top-tours.tours.${tour}.price`)}
+                      {t(`tours.${tour}.price`)}
                     </span>
                   </div>
                 </div>
                 <Button widthFit onClick={handleBook}>
-                  {t('top-tours.book-label')}
+                  {t('book-label')}
                 </Button>
               </div>
             </div>

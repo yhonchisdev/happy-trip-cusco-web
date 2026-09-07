@@ -1,18 +1,21 @@
 import type { PropsWithChildren } from 'react'
 import { createPortal } from 'react-dom'
-import { useTranslation } from 'react-i18next'
+import { useTranslations, type Locale } from 'use-intl'
 import { Icons } from '@/icons/icon'
+import { locales } from '@/i18n/config'
 import { cn } from '@/utils'
+import { useLocaleStore } from '@/store/locale'
 import { useDisclosure } from '@/hooks/use-disclosure'
 import { Section } from './section'
 import { Button } from './button'
 
 export function Header() {
-  const { t, i18n } = useTranslation()
+  const t = useTranslations('Header')
+  const localeStore = useLocaleStore()
   const disclosure = useDisclosure()
 
-  const handleLanguage = (value: string) => () => {
-    i18n.changeLanguage(value)
+  const handleLanguage = (value: Locale) => () => {
+    localeStore.setLocale(value)
     disclosure.onClose()
   }
 
@@ -26,7 +29,7 @@ export function Header() {
           icon='Language'
           onClick={disclosure.onOpen}
         >
-          {i18n.language.toUpperCase()}
+          {localeStore.locale.toUpperCase()}
         </Button>
       </header>
       {disclosure.isOpen &&
@@ -39,7 +42,7 @@ export function Header() {
             <div className='animate-fade-in-up relative flex w-full max-w-85 flex-col gap-6 rounded-2xl bg-white px-6 py-8 shadow-xl'>
               <div className='flex items-center justify-between gap-4'>
                 <span className='text-lg leading-7 font-bold'>
-                  {t('language-title')}
+                  {t('language.title')}
                 </span>
                 <button
                   onClick={disclosure.onClose}
@@ -49,14 +52,14 @@ export function Header() {
                 </button>
               </div>
               <div className='flex flex-col gap-2'>
-                {i18n.languages.map((language) => {
+                {locales.map((locale) => {
                   return (
                     <LanguageButton
-                      key={language}
-                      active={i18n.language === language}
-                      onClick={handleLanguage(language)}
+                      key={locale}
+                      active={locale === localeStore.locale}
+                      onClick={handleLanguage(locale)}
                     >
-                      {t(`language.${language}`)}
+                      {t(`language.${locale}`)}
                     </LanguageButton>
                   )
                 })}

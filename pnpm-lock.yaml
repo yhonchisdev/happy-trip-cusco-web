@@ -14,18 +14,12 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
-      i18next:
-        specifier: ^26.4.0
-        version: 26.4.0(typescript@6.0.3)
       react:
         specifier: ^19.2.8
         version: 19.2.8
       react-dom:
         specifier: ^19.2.8
         version: 19.2.8(react@19.2.8)
-      react-i18next:
-        specifier: ^17.0.12
-        version: 17.0.12(i18next@26.4.0(typescript@6.0.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@6.0.3)
       tailwind-animations:
         specifier: ^1.0.2
         version: 1.0.2(tailwindcss@4.3.3)
@@ -35,6 +29,12 @@ importers:
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
+      use-intl:
+        specifier: ^4.14.2
+        version: 4.14.2(react@19.2.8)
+      zustand:
+        specifier: ^5.0.15
+        version: 5.0.15(@types/react@19.2.18)(react@19.2.8)
     devDependencies:
       '@babel/core':
         specifier: ^7.29.7
@@ -158,6 +158,15 @@ packages:
   '@capsizecss/unpack@4.0.1':
     resolution: {integrity: sha512-CuNiSqg7+e1cO/GjffyMOm5Tt2jUF9CWHHnvQ/UkqvtkGfHdgwEC0wpmq7fkN3gxwpRnrAN0WzO3vREKmNolMQ==}
     engines: {node: '>=18'}
+
+  '@formatjs/fast-memoize@3.1.7':
+    resolution: {integrity: sha512-zXfhLpvA6T7+efdt9JLbBwZ00tT7NsBMDVnDu8rpHeNNv8KfRZAMo2gkG0k9lK/Nzc//3kJ9pImsfuJxk3KhUA==}
+
+  '@formatjs/icu-messageformat-parser@3.5.17':
+    resolution: {integrity: sha512-cN9jhVqT7u0K9tix43fhjoUwL0nazyW6zsNIXs2QdPADr+nurPfYyssUiMqcSCGlPcCiqnYVxgSn7zBSuI+5Bg==}
+
+  '@formatjs/icu-skeleton-parser@2.1.11':
+    resolution: {integrity: sha512-j8cUmOJzVgkHuS0QiQ6ga76UIoLOFSAMWhs7aZJztH3aAdCOAE6vpC8KVvFB4cU10ON0y2/5oOVmPJ43s2lTwA==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -422,6 +431,9 @@ packages:
     peerDependenciesMeta:
       rollup:
         optional: true
+
+  '@schummar/icu-type-parser@1.21.5':
+    resolution: {integrity: sha512-bXHSaW5jRTmke9Vd0h5P7BtWZG9Znqb8gSDxZnxaGSJnGwPLDPfS+3g0BKzeWqzgZPsIVZkM7m2tbo18cm5HBw==}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0':
     resolution: {integrity: sha512-b9MIk7yhdS1pMCZM8VeNfUlSKVRhsHZNMl5O9SfaX0l0t5wjdgu4IDzGB8bpnGBBOjGST3rRFVsaaEtI4W6f7g==}
@@ -763,20 +775,15 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  html-parse-stringify@4.0.1:
-    resolution: {integrity: sha512-0zHsZJrK7S3K2aucXWL6ycoYJ/iNtIcFHC/nYQgFklPtrv5LpJctIiSCroWZWeuoXvuyFdzp6KzjJQ+OT5MfFw==}
-
-  i18next@26.4.0:
-    resolution: {integrity: sha512-rsmK5bFqsD1AetSFSIa43wtNR4WpvvH4p0tLEsTxkC7QTrfdFm06nbQ95bh8Og4wwaCnUEcm9DVYL2cgxitiQg==}
-    peerDependencies:
-      typescript: ^5 || ^6 || ^7
-    peerDependenciesMeta:
-      typescript:
-        optional: true
+  icu-minify@4.14.2:
+    resolution: {integrity: sha512-2eJ9ooR8xXWbe0IivG58TFL96AUp5ts8FJ4qSMzn8YRJXpLmtPNWcUkIZ8t3iz0+eaVzG+mN+rdNIigHDvYa2Q==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
+
+  intl-messageformat@11.2.14:
+    resolution: {integrity: sha512-9f2VD1HFuxUvMw0RxsaP8WmMns6JRTnsNB/zghTFrp11ZktiXWwVDeZBPQchBKEmo+Gx/ZhxI7Qht7YglFD4PA==}
 
   is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
@@ -1112,22 +1119,6 @@ packages:
     peerDependencies:
       react: ^19.2.8
 
-  react-i18next@17.0.12:
-    resolution: {integrity: sha512-lFWPEGkxQ6RhusdUkysFBD58VHfSSzvHBzqMgN0SvfVpdQGfwtNkStTqdy08/sJd7s807qqutgx93fRpD0DJ3Q==}
-    peerDependencies:
-      i18next: '>= 26.2.0'
-      react: '>= 16.8.0'
-      react-dom: '*'
-      react-native: '*'
-      typescript: ^5 || ^6 || ^7
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-      typescript:
-        optional: true
-
   react@19.2.8:
     resolution: {integrity: sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==}
     engines: {node: '>=0.10.0'}
@@ -1261,10 +1252,10 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  use-sync-external-store@1.6.0:
-    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
+  use-intl@4.14.2:
+    resolution: {integrity: sha512-XffvbD4q4uZjRbuO8CgK6Ei8hvYn7aegoSad2YPho1ZRjYEs+k4erhYq0vfm5ttF4lnja3riXCeJrtUdNdQG3g==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
 
   vite-plugin-svgr@5.2.0:
     resolution: {integrity: sha512-qj2eAKF8C6PZWemVTvQA0xgQIcP1hHU6Buh7fl6BhvayWwnuxE+z417miKxeDvRWbDrupQ1oK99hfxElopJ3sQ==}
@@ -1319,6 +1310,24 @@ packages:
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
+
+  zustand@5.0.15:
+    resolution: {integrity: sha512-MpSEjRiBkA9crSYeOUH32rJC7SVqAbm0Fqcqge/bUi2PPoLcBWKOsG+C8mevmpr8TwXHBVkChbbJiyvkE+i/3A==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=18.0.0'
+      immer: '>=9.0.6'
+      react: '>=18.0.0'
+      use-sync-external-store: '>=1.2.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+      use-sync-external-store:
+        optional: true
 
 snapshots:
 
@@ -1399,7 +1408,8 @@ snapshots:
     dependencies:
       '@babel/types': 7.29.8
 
-  '@babel/runtime@7.29.7': {}
+  '@babel/runtime@7.29.7':
+    optional: true
 
   '@babel/template@7.29.7':
     dependencies:
@@ -1427,6 +1437,14 @@ snapshots:
   '@capsizecss/unpack@4.0.1':
     dependencies:
       fontkitten: 1.0.3
+
+  '@formatjs/fast-memoize@3.1.7': {}
+
+  '@formatjs/icu-messageformat-parser@3.5.17':
+    dependencies:
+      '@formatjs/icu-skeleton-parser': 2.1.11
+
+  '@formatjs/icu-skeleton-parser@2.1.11': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -1579,6 +1597,8 @@ snapshots:
       '@types/estree': 1.0.9
       estree-walker: 2.0.2
       picomatch: 4.0.7
+
+  '@schummar/icu-type-parser@1.21.5': {}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0(@babel/core@7.29.7)':
     dependencies:
@@ -1892,16 +1912,19 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  html-parse-stringify@4.0.1: {}
-
-  i18next@26.4.0(typescript@6.0.3):
-    optionalDependencies:
-      typescript: 6.0.3
+  icu-minify@4.14.2:
+    dependencies:
+      '@formatjs/icu-messageformat-parser': 3.5.17
 
   import-fresh@3.3.1:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
+
+  intl-messageformat@11.2.14:
+    dependencies:
+      '@formatjs/fast-memoize': 3.1.7
+      '@formatjs/icu-messageformat-parser': 3.5.17
 
   is-arrayish@0.2.1: {}
 
@@ -2142,17 +2165,6 @@ snapshots:
       react: 19.2.8
       scheduler: 0.27.0
 
-  react-i18next@17.0.12(i18next@26.4.0(typescript@6.0.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@6.0.3):
-    dependencies:
-      '@babel/runtime': 7.29.7
-      html-parse-stringify: 4.0.1
-      i18next: 26.4.0(typescript@6.0.3)
-      react: 19.2.8
-      use-sync-external-store: 1.6.0(react@19.2.8)
-    optionalDependencies:
-      react-dom: 19.2.8(react@19.2.8)
-      typescript: 6.0.3
-
   react@19.2.8: {}
 
   regexp-tree@0.1.27: {}
@@ -2265,8 +2277,12 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  use-sync-external-store@1.6.0(react@19.2.8):
+  use-intl@4.14.2(react@19.2.8):
     dependencies:
+      '@formatjs/fast-memoize': 3.1.7
+      '@schummar/icu-type-parser': 1.21.5
+      icu-minify: 4.14.2
+      intl-messageformat: 11.2.14
       react: 19.2.8
 
   vite-plugin-svgr@5.2.0(typescript@6.0.3)(vite@8.2.2(@types/node@24.13.3)(jiti@2.7.0)):
@@ -2295,3 +2311,8 @@ snapshots:
   webpack-virtual-modules@0.6.2: {}
 
   yallist@3.1.1: {}
+
+  zustand@5.0.15(@types/react@19.2.18)(react@19.2.8):
+    optionalDependencies:
+      '@types/react': 19.2.18
+      react: 19.2.8

@@ -1,12 +1,12 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'use-intl'
 import { Icons } from '@/icons/icon'
 import { Section } from './section'
 
 export function Footer() {
-  const { t } = useTranslation()
+  const t = useTranslations('Footer')
 
   const handleContact = () => {
-    const encodedMessage = encodeURIComponent(t('footer.whatsapp-message'))
+    const encodedMessage = encodeURIComponent(t('whatsapp-message'))
     const whatsappUrl = `https://wa.me/+51945054242?text=${encodedMessage}`
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
   }
@@ -20,7 +20,7 @@ export function Footer() {
               <Icons.Logo className='size-10' />
               <div className='flex flex-1 flex-col gap-1.5'>
                 <span className='text-lunar-green text-xs leading-4'>
-                  {t('footer.author')}
+                  {t('author')}
                 </span>
                 <div className='flex flex-wrap gap-x-4'>
                   <a
@@ -28,27 +28,27 @@ export function Footer() {
                     target='_blank'
                     className='hover:text-australia-green text-base leading-6 font-bold underline transition-colors duration-200'
                   >
-                    {t('footer.links.address')}
+                    {t('links.address')}
                   </a>
                   <a
                     href='https://wa.me/+51945054242'
                     target='_blank'
                     className='hover:text-australia-green text-base leading-6 font-bold underline transition-colors duration-200'
                   >
-                    {t('footer.links.phone')}
+                    {t('links.phone')}
                   </a>
                   <a
                     href='mailto:happytripcusco@gmail.com'
                     target='_blank'
                     className='hover:text-australia-green text-base leading-6 font-bold underline transition-colors duration-200'
                   >
-                    {t('footer.links.email')}
+                    {t('links.email')}
                   </a>
                 </div>
               </div>
             </div>
             <span className='text-lunar-green text-sm leading-4.5'>
-              {t('footer.about')}
+              {t('about')}
             </span>
           </div>
           <div className='grid-area-social flex items-start gap-2'>

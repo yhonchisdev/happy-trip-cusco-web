@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'use-intl'
 import { Icons } from '@/icons/icon'
 import { cn } from '@/utils'
 import discoverExclusiveRoutes from '@/assets/images/why-choose-us/discover-exclusive-routes.jpg'
@@ -18,7 +18,7 @@ const photo: Record<(typeof steps)[number], string> = {
 }
 
 export function WhyChooseUs() {
-  const { t } = useTranslation()
+  const t = useTranslations('WhyChooseUs')
 
   return (
     <div className='py-10'>
@@ -26,12 +26,12 @@ export function WhyChooseUs() {
         <div className='mx-auto flex max-w-160 flex-col gap-4 text-center'>
           <div className='timeline-view animate-fade-in-up animate-range-[entry_5%_contain_20%]'>
             <span className='text-sea-glass text-base leading-6'>
-              {t('why-choose-us.tagline')}
+              {t('tagline')}
             </span>
           </div>
           <div className='timeline-view animate-fade-in-down animate-range-[entry_5%_contain_20%]'>
             <h2 className='text-xl leading-7 font-semibold text-white md:text-[42px] md:leading-14 md:font-black'>
-              {t('why-choose-us.title')}
+              {t('title')}
             </h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ export function WhyChooseUs() {
                           },
                         )}
                         src={photo[step]}
-                        alt={t(`why-choose-us.${step}.title`)}
+                        alt={t(`steps.${step}.title`)}
                         loading='lazy'
                       />
                       {step !== 'enjoy-stress-free' && (
@@ -85,7 +85,7 @@ export function WhyChooseUs() {
                                   },
                                 )}
                               >
-                                {t(`why-choose-us.${step}.badge`)}
+                                {t(`steps.${step}.badge`)}
                               </span>
                               {step === 'choose-your-own-pace' && (
                                 <Icons.ArrowUp className='text-malachite size-4' />
@@ -119,10 +119,10 @@ export function WhyChooseUs() {
                     </div>
                     <div className='flex flex-col gap-3 text-center'>
                       <h4 className='text-xl leading-7.5 font-bold text-white'>
-                        {t(`why-choose-us.${step}.title`)}
+                        {t(`steps.${step}.title`)}
                       </h4>
                       <span className='text-sea-glass text-sm leading-5.25'>
-                        {t(`why-choose-us.${step}.description`)}
+                        {t(`steps.${step}.description`)}
                       </span>
                     </div>
                   </div>
